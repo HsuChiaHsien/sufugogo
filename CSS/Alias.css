@@ -1,0 +1,259 @@
+body {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Microsoft JhengHei;
+}
+
+body,
+div,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+dl,
+dt,
+dd,
+ul,
+form,
+input,
+textarea,
+p,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+button,
+a,
+select {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.p_view {
+    width: 1260px;
+    margin: 10px auto 10px auto;
+}
+
+.p_view .pImgBlock {
+    width: 40%;
+    border: none;
+}
+
+#product_img_big {
+    width: 96%;
+    padding: 2%;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+#product_img img {
+    border: #d9d9d9 2px solid;
+    cursor: pointer;
+    width: 80px;
+}
+
+.product_img_group {
+    width: 505px;
+    height: 512px;
+    min-height: 450px;
+}
+
+.productImg {
+    border: #d9d9d9 2px solid;
+    cursor: pointer;
+    width: 80px;
+}
+
+.p_view .produc_main {
+    width: 59%;
+    padding-left: 1%;
+}
+
+.p_view h1 {
+    padding: 0 30px;
+    border-color: #999;
+}
+
+#priceArea {
+    margin-left: 30px;
+    padding-top: 26px;
+    width: auto;
+    height: 60px;
+    border-radius: 7px;
+    background-color: #fffae7;
+}
+
+#priceArea h3 {
+    padding-left: 30px;
+    font-size: 28px;
+    color: #be1e2d;
+    display: inline;
+}
+
+.p_view .mini_text {
+    font-size: 15px;
+    color: rgb(119, 118, 118);
+    padding-left: 4em;
+    margin: 10px;
+}
+
+.mini_box {
+    font-size: 15px;
+    color: rgb(119, 118, 118);
+}
+
+.mini_text .price {
+    font-size: 15px;
+}
+
+.p_view a {
+    text-decoration: underline;
+}
+
+.p_view .list_text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    padding: 0px 0px 3px 0;
+    width: 100%;
+    font-weight: 800;
+}
+
+.item-purchase {
+    display: flex;
+}
+
+#count_place {
+    padding-top: 20px;
+    margin-left: 60px;
+}
+
+.fare {
+    margin-left: 60px;
+    white-space: nowrap;
+}
+
+input.qtyminus {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #bcf443;
+    background: #fffae3;
+}
+
+.qty {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid #bcf443;
+    border-bottom: 1px solid #bcf443;
+    background: #fffae3;
+}
+
+input.qtyplus {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #bcf443;
+    background: #fffae3;
+}
+
+.buyArea {
+    margin-left: 40px;
+}
+
+.carButton {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 7px;
+}
+
+.title_box {
+    width: 1120px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 800;
+    text-align: justify;
+    width: 900px;
+    margin-left: 100px;
+}
+
+
+.attributeArea {
+    text-align: center;
+    margin: 20px 50px 0 100px;
+}
+
+.list_text_group {
+    width: 1120px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tab_cont {
+    text-align: justify;
+}
+
+.btn,
+.smallBtn {
+    padding: 0.2em 0.6em;
+    border: 1px solid #bcf443;
+    border-radius: 0.1em;
+    box-shadow: 0 0.2em 0.5em #a7a4a4;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    background-color: #bcf443;
+    color: #FFF;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 麵包屑的容器 */
+.breadcrumb {
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    width: 1080px;
+    margin-bottom: 30px;
+}
+
+/* 麵包屑內的連結樣式 */
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 2px 5px;
+}
+
+/* 最後一個目前頁面的元素樣式 */
+.breadcrumb span {
+    color: #333;
+    padding: 2px 5px;
+}
+
+/* 麵包屑連結之間的分隔符號 */
+.breadcrumb a::after {
+    content: ">";
+    margin: 0 5px;
+    color: #ccc;
+}
+
+.p_view .product_img {
+    border: none;
+    border-bottom-style: double;
+    border-bottom-color: #a7a2a2;
+}

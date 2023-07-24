@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>派對遊戲</title>
+    <link rel="stylesheet" href="../CSS/header_fixed.css">
+    <link rel="stylesheet" href="../CSS/Mall_a.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="topnav" style="position: static;">
+        <!-- 導覽列的展開清單 -->
+        <div class="navleft">
+            <div class="hb_box">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="hb_list" style="background-color: #fffae7;">
+                    <div class="menu"></div>
+                </label>
+                <div class="menu_list">
+                    <ul>
+                        <li><a href="../HTML/index.html">首頁</a></li>
+                        <li><a href="../HTML/AboutUs.html">關於我們</a></li>
+                        <li><a href="../HTML/BoardGame.html">趣味桌遊</a></li>
+                        <li><a href="../HTML/FineDining.html">精緻餐點</a></li>
+                        <li><a href="../HTML/BoardGameMall.html">桌遊商城</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- navlogo -->
+            <div class="navlogo">
+                <a href="../HTML/index.html"><img src="../image/LOGO.png" width="100%" alt=""></a>
+            </div>
+        </div>
+        <div class="navcenter">
+            <!-- search_icon -->
+            <div class="search" style="width: 25px; height: 25px;">
+                <img src="../image/search_icon.png" width="100%" alt="">
+            </div>
+            <!-- navinput -->
+            <div class="navinput">
+                <form action="">
+                    <div>
+                        <input type="search" style="background-color: #fff;border: 0px solid #000;height: 25px;"
+                            placeholder="請輸入桌遊名稱">
+                        <input type="button" value="搜尋" style="background-color: transparent; border: 0;">
+                    </div>
+                </form>
+            </div>
+            <!-- shoppingcart -->
+            <div class="navshoppingcart" style="width: 25px;height: 25px;margin: 0 50px 0 0;">
+                <a href=""><img src="../image/shoppingcar_icon.png" width="100%" alt=""></a>
+            </div>
+            <!-- memberlogin -->
+            <div class="memberlogin">
+                <a href="">會員登入</a>
+            </div>
+        </div>
+        <div class="navright">
+            <!-- FB -->
+            <div class="FB navsocialicon">
+                <img src="../image/facebook_icon.png" width="100%" alt="">
+            </div>
+            <!-- Line -->
+            <div class="Line navsocialicon">
+                <img src="../image/line_icon.png" width="100%" alt="">
+            </div>
+            <!-- IG -->
+            <div class="IG navsocialicon">
+                <img src="../image/instagram_icon.png" width="100%" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="header_hr"></div>
+
+    <div class="breadcrumb">
+        <a href="">商城服務</a>
+        <span>派對遊戲</span>
+    </div>
+
+    <div style="display: flex; justify-content: space-evenly; width: 1260px; margin: 0 auto;">
+        <div class="subMenu">
+            <form action="/product">
+                <h3>依條件搜尋</h3>
+                <p>
+                    適玩年齡
+                    <select class="select" name="age">
+                        <option value="">全部</option>
+                        <option value="">3歲以上</option>
+                        <option value="">4歲以上</option>
+                        <option value="">5歲以上</option>
+                        <option value="">6歲以上</option>
+                        <option value="">7歲以上</option>
+                        <option value="">8歲以上</option>
+                        <option value="">9歲以上</option>
+                        <option value="">10歲以上</option>
+                        <option value="">11歲以上</option>
+                        <option value="">12歲以上</option>
+                        <option value="">13歲以上</option>
+                        <option value="">14歲以上</option>
+                        <option value="">15歲以上</option>
+                        <option value="">16歲以上</option>
+                        <option value="">17歲以上</option>
+                        <option value="">18歲以上</option>
+                        <option value="">19歲以上</option>
+                        <option value="">20歲以上</option>
+                    </select>
+                </p>
+                <p>
+                    遊戲人數
+                    <select class="select" name="people">
+                        <option value="">全部</option>
+                        <option value="">1人以上</option>
+                        <option value="">2人以上</option>
+                        <option value="">3人以上</option>
+                        <option value="">4人以上</option>
+                        <option value="">5人以上</option>
+                        <option value="">6人以上</option>
+                        <option value="">7人以上</option>
+                        <option value="">8人以上</option>
+                        <option value="">9人以上</option>
+                        <option value="">10人以上</option>
+                    </select>
+                </p>
+                <p>
+                    價格排序
+                    <select class="select" name="price">
+                        <option value="">全部</option>
+                        <option value="">500元以下</option>
+                        <option value="">1000元以下</option>
+                        <option value="">1500元以下</option>
+                        <option value="">2000元以下</option>
+                        <option value="">2500元以下</option>
+                        <option value="">3000元以下</option>
+                        <option value="">高到低</option>
+                        <option value="">低到高</option>
+                    </select>
+                </p>
+                <p>
+                    語言搜尋
+                    <select class="select" name="language">
+                        <option value="">全部</option>
+                        <option value="">中</option>
+                        <option value="">其他</option>
+                        <option value="">德</option>
+                        <option value="">日文</option>
+                        <option value="">無</option>
+                        <option value="">簡中</option>
+                        <option value="">繁中</option>
+                        <option value="">英</option>
+                        <option value="">英文</option>
+                        <option value="">荷</option>
+                        <option value="">荷語</option>
+                    </select>
+                </p>
+                <p>
+                    分類類型
+                    <select class="select" id="functionID" name="functionID">
+                        <option>全部</option>
+                        <option value="">熱門遊戲</option>
+                        <option value="">派對遊戲</option>
+                        <option value="">策略桌遊</option>
+                        <option value="">親子策略</option>
+                        <option value="">棋奕策略</option>
+                        <option value="">主題遊戲</option>
+                        <option value="">家庭遊戲</option>
+                        <option value="">周邊配件</option>
+                    </select>
+                </p>
+                <button class="img_btn">查詢</button>
+            </form>
+        </div>
+
+        <div class="main">
+            <h1>派對遊戲</h1>
+            <a href="">
+                <div class="box">
+                    <div class="box_img">
+                        <img src="../image/Alias.png" title="估估劃劃旅行版" alt="估估劃劃旅行版">
+                    </div>
+                    <div>
+                        <p class="productName">商品名稱 : 估估劃劃旅行版</p>
+                        <div style="display: flex;">
+                            <div class="text_buy">
+                                <p>適玩年齡 : 8歲以上</p>
+                                <p>遊戲人數 : 4人~12人</p>
+                                <p>遊戲時間 : 30分鐘</p>
+                            </div>
+                            <div class="text_cont">
+                                <p>遊戲特色 : </p>
+                                <p>
+                                    <strong>分隊猜題競賽，玩家在各自隊伍輪流擔任出題者，在有限的時間內盡可能讓隊友猜到謎底，答對越多張可以前進劃掉越多，最先抵達終點的隊伍獲得勝利！</strong>
+                                </p>
+                                <p class="price_row">售價 NT$590元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="box">
+                    <div class="box_img">
+                        <img src="../image/TheMessage.png" title="風聲" alt="風聲">
+                    </div>
+                    <div>
+                        <p class="productName">商品名稱 : 風聲</p>
+                        <div style="display: flex;">
+                            <div class="text_buy">
+                                <p>適玩年齡 : 16歲以上</p>
+                                <p>遊戲人數 : 3人~7人</p>
+                                <p>遊戲時間 : 60分鐘</p>
+                            </div>
+                            <div class="text_cont">
+                                <p>遊戲特色 : </p>
+                                <p>
+                                    <strong>1. 真真假假，考驗你的推理與判斷</strong>
+                                </p>
+                                <p>
+                                    <strong>2. 享受諜對諜的鬥智樂趣</strong>
+                                </p>
+                                <p>
+                                    <strong>3. 要先騙過敵人，得先騙過自己人</strong>
+                                </p>
+                                <p class="price_row">售價 NT$550元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="box">
+                    <div class="box_img">
+                        <img src="../image/Telestrations.png" title="傳情畫意" alt="傳情畫意">
+                    </div>
+                    <div>
+                        <p class="productName">商品名稱 : 傳情畫意</p>
+                        <div style="display: flex;">
+                            <div class="text_buy">
+                                <p>適玩年齡 : 6歲以上</p>
+                                <p>遊戲人數 : 4人~6人</p>
+                                <p>遊戲時間 : 25分鐘</p>
+                            </div>
+                            <div class="text_cont">
+                                <p>遊戲特色 : </p>
+                                <p>
+                                    <strong>玩家必須「手腦並用」：手負責畫畫、腦袋負責開洞。每個人不僅要畫給別人猜，還要猜給別人畫，當答案揭曉時，才發現大家是否都搞錯了什麼！</strong>
+                                </p>
+                                <p class="price_row">售價 NT$790元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="box">
+                    <div class="box_img">
+                        <img src="../image/ThreeKingdomsKill.png" title="三國殺體驗版" alt="三國殺體驗版">
+                    </div>
+                    <div>
+                        <p class="productName">商品名稱 : 三國殺體驗版</p>
+                        <div style="display: flex;">
+                            <div class="text_buy">
+                                <p>適玩年齡 : 8歲以上</p>
+                                <p>遊戲人數 : 4人~6人</p>
+                                <p>遊戲時間 : 30分鐘</p>
+                            </div>
+                            <div class="text_cont">
+                                <p>遊戲特色 : </p>
+                                <p>
+                                    <strong>三國殺體驗版，一牌兩用，可當撲克牌使用。 本規則適用於沒有接觸過三國殺標準版的玩家</strong>
+                                </p>
+                                <p class="price_row">售價 NT$120元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="box">
+                    <div class="box_img">
+                        <img src="../image/CatLady.png" title="萌貓淑女" alt="萌貓淑女">
+                    </div>
+                    <div>
+                        <p class="productName">商品名稱 : 萌貓淑女</p>
+                        <div style="display: flex;">
+                            <div class="text_buy">
+                                <p>適玩年齡 : 8歲以上</p>
+                                <p>遊戲人數 : 2人~4人</p>
+                                <p>遊戲時間 : 30分鐘</p>
+                            </div>
+                            <div class="text_cont">
+                                <p>遊戲特色 : </p>
+                                <p>
+                                    <strong>此款桌遊，以遊戲的方式，傳遞「領養代替購買」的理念。
+                                        遊戲能體悟到領養毛小孩的過程，解決領養寵物的過程中會遇到的問題以及教育問題。</strong>
+                                </p>
+                                <p class="price_row">售價 NT$860元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div id="page">
+                <span class="box page_box" style="font-weight: bold; color: #000">1</span>
+                <a class="box page_box" href="">2</a>
+                <a class="box page_box" href="">3</a>
+                <a class="box page_box" href="" style="margin-left: 50px;">Next</a>
+                <a class="box page_box" href=""></a>
+                <div style="margin-top: 10px;"> ( 共 8 頁 ) </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_hr"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="rowtop">
+                <div style="margin: 50px 0 0 0;width: 150px; height: 135px;">
+                    <img src="../image/LOGO.png" width="100%" alt="">
+                </div>
+                <div style="margin: 0  30px 0;">
+                    <div style="margin: 0 0 8px 0;">
+                        <h6>關於我們</h6>
+                        <hr style="border: 1px solid #000;width: 120px;">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="">首頁</a></li>
+                        <li><a href="">桌遊介紹</a></li>
+                        <li><a href="">餐點介紹</a></li>
+                        <li><a href="">消費方式</a></li>
+                        <li><a href="">門市資訊</a></li>
+                    </ul>
+                </div>
+
+                <div style="margin: 0 0 30px 0;">
+                    <div style="margin: 0 0 8px 0;">
+                        <h6>商城服務</h6>
+                        <hr style="border: 1px solid #000;width: 120px;">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="">加入會員</a></li>
+                        <li><a href="">會員中心</a></li>
+                        <li><a href="">線上商城</a></li>
+                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="">常見問題</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="social-icons">
+                        <div class="FB aaa">
+                            <img src="../image/facebook_icon.png" width="100%" alt="">
+                        </div>
+                        <!-- Line -->
+                        <div class="Line aaa">
+                            <img src="../image/line_icon.png" width="100%" alt="">
+                        </div>
+                        <!-- IG -->
+                        <div class="IG aaa">
+                            <img src="../image/instagram_icon.png" width="100%" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 2px solid #000;">
+
+        <div class="container">
+            <div class="rowdown">
+                <div>
+                    <p class="footerbottom-text">
+                        本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。此作品僅為練習及創作之用，無其他商業用途，如果作品有冒犯到任何智慧財產權，請聯繫f4frodojerry123@gmail.com，會盡速撤銷作品。
+                        This work is only for practicing and creation, and has no other commercial purposes. If the work
+                        violates any intellectual property rights, please contact f4frodojerry123@gmail.com, and the
+                        work will be withdrawn as soon as possible
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

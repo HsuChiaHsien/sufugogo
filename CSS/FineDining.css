@@ -1,0 +1,68 @@
+body {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #1d1d1d;
+    font-family: 'Jacques Francois', Arial, STHeiti, 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.FoodGroup {
+    display: flex;
+    margin: 30px;
+    position: relative;
+}
+
+.Food_img {
+    width: 500px;
+    height: 335px;
+    z-index: 5;
+}
+
+.Food_txt {
+    margin-top: 45px;
+    font-weight: bold;
+}
+
+.Food_txt_title {
+    background-color: #bcf443;
+    font-size: 32px;
+    text-shadow: #666 0.1em 0.1em 0.2em;
+    width: 380px;
+    text-align: center;
+    margin-left: -15px;
+    position: absolute;
+}
+
+.Food_txt_list {
+    display: flex;
+    margin-top: 60px;
+    font-size: 17px;
+    line-height: 300%;
+    margin-left: 40px;
+}
+
+.FoodGroupleft {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+    position: relative;
+}
+
+.Food_txt_list_left {
+    display: flex;
+    margin-top: 60px;
+    font-size: 17px;
+    line-height: 300%;
+    margin-right: 40px;
+}
+
+.Food_txt_title_left {
+    background-color: #bcf443;
+    font-size: 32px;
+    text-shadow: #666 0.1em 0.1em 0.2em;
+    width: 380px;
+    text-align: center;
+    margin-left: -33px;
+    position: absolute;
+}

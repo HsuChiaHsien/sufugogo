@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>趣味桌遊</title>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/BoardGame.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header_box">
+        <img src="../image/aboutus.png" alt="headerimg">
+        <div class="headertxt">
+            <div style="font-size: 64px;">
+                趣味桌遊
+            </div>
+        </div>
+    </div>
+    <div class="nav_box">
+        <nav id="topnav">
+            <!-- 導覽列的展開清單 -->
+            <div class="navleft">
+                <div class="hb_box">
+                    <input type="checkbox" id="menu">
+                    <label for="menu" class="hb_list">
+                        <div class="menu"></div>
+                    </label>
+                    <div class="menu_list">
+                        <ul>
+                            <li><a href="../HTML/index.html">首頁</a></li>
+                            <li><a href="../HTML/AboutUs.html">關於我們</a></li>
+                            <li><a href="../HTML/BoardGame.html">趣味桌遊</a></li>
+                            <li><a href="../HTML/FineDining.html">精緻餐點</a></li>
+                            <li><a href="../HTML/BoardGameMall.html">桌遊商城</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- navlogo -->
+                <div class="navlogo">
+                    <a href="../HTML/index.html"><img src="../image/LOGO.png" width="100%" alt=""></a>
+                </div>
+            </div>
+            <div class="navcenter">
+                <!-- search_icon -->
+                <div class="search">
+                    <img src="../image/search_icon.png" width="100%" alt="">
+                </div>
+                <!-- navinput -->
+                <div class="navinput">
+                    <form action="">
+                        <div>
+                            <input type="search" style="background-color: #ddd;border: 0px solid #000;height: 25px;"
+                                placeholder="請輸入桌遊名稱">
+                            <input type="button" value="搜尋" style="background-color: #fff;border: 0;">
+                        </div>
+                    </form>
+                </div>
+                <!-- shoppingcart -->
+                <div class="navshoppingcart" style="width: 25px;height: 25px;margin: 0 50px 0 0;">
+                    <a href=""><img src="../image/shoppingcar_icon.png" width="100%" alt=""></a>
+                </div>
+                <!-- memberlogin -->
+                <div class="memberlogin">
+                    <a href="">會員登入</a>
+                </div>
+            </div>
+            <div class="navright">
+                <!-- FB -->
+                <div class="FB navsocialicon">
+                    <img src="../image/facebook_icon.png" width="100%" alt="">
+                </div>
+                <!-- Line -->
+                <div class="Line navsocialicon">
+                    <img src="../image/line_icon.png" width="100%" alt="">
+                </div>
+                <!-- IG -->
+                <div class="IG navsocialicon">
+                    <img src="../image/instagram_icon.png" width="100%" alt="">
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="header_hr"></div>
+
+    <div class="row">
+        <form action="" id="searchform">
+            <input type="hidden" name="term" value="">
+            <div class="inline_b">
+                <img src="../image/kind_icon.png" alt="遊戲分類">
+                <select name="category" id="category">
+                    <option value="">遊戲分類</option>
+                    <option value="">派對遊戲</option>
+                    <option value="">策略遊戲</option>
+                    <option value="">戰爭遊戲</option>
+                    <option value="">棋奕遊戲</option>
+                    <option value="">主題遊戲</option>
+                    <option value="">家庭遊戲</option>
+                    <option value="">周邊配件</option>
+                </select>
+            </div>
+            <div class="inline_b">
+                <img src="../image/peoplenumber_icon.png" alt="遊戲人數">
+                <select name="people" id="people">
+                    <option value="">遊戲人數</option>
+                    <option value="">1人</option>
+                    <option value="">2人</option>
+                    <option value="">3人</option>
+                    <option value="">4人</option>
+                    <option value="">5人</option>
+                    <option value="">6人</option>
+                    <option value="">7人</option>
+                    <option value="">8人</option>
+                    <option value="">9人</option>
+                    <option value="">10~19人</option>
+                    <option value="">20+人</option>
+                </select>
+            </div>
+            <div class="inline_b">
+                <img src="../image/age_icon.png" alt="遊戲適齡">
+                <select name="age" id="age">
+                    <option value="">遊戲適齡</option>
+                    <option value="">1歲以上</option>
+                    <option value="">2歲以上</option>
+                    <option value="">3歲以上</option>
+                    <option value="">4歲以上</option>
+                    <option value="">5歲以上</option>
+                    <option value="">6歲以上</option>
+                    <option value="">7歲以上</option>
+                    <option value="">8歲以上</option>
+                    <option value="">9歲以上</option>
+                    <option value="">10歲以上</option>
+                    <option value="">11歲以上</option>
+                    <option value="">12歲以上</option>
+                    <option value="">13歲以上</option>
+                    <option value="">14歲以上</option>
+                    <option value="">15歲以上</option>
+                    <option value="">16歲以上</option>
+                    <option value="">17歲以上</option>
+                    <option value="">18歲以上</option>
+                    <option value="">19歲以上</option>
+                    <option value="">20歲以上</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href="../HTML/Alias.html"><img src="../image/Alias.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">估估劃劃旅行版</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Telestrations.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">傳情畫意</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/TheMessage.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">風聲</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 3~9人<br>適齡 10+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/ThreeKingdomsKill.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">三國殺</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href=""><img src="../image/ChaDango.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">茶丸子</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~8人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Chromino.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center; ">卡米諾</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">家庭遊戲</div>
+                <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/WitchHunter.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">女巫獵人</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~6人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Salem1692.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">獵巫鎮</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~5人<br>適齡 12+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href=""><img src="../image/SnowTime.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">雪之時</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 3~5人<br>適齡 10+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/BombArena2.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">炸彈競技場2</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~9人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/ThreeKingdomsKillMyth.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">三國殺 : 神話</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 2~10人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/CatLady.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">萌貓淑女</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~4人<br>適齡 8+</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page">
+        <span class="box page_box" style="font-weight: bold; color: #000">1</span>
+        <a class="box page_box" href="">2</a>
+        <a class="box page_box" href="">3</a>
+        <a class="box page_box" href="" style="margin-left: 50px;">Next</a>
+        <a class="box page_box" href=""></a>
+        <div class="clear:both"> ( 共 100 頁 ) </div>
+    </div>
+
+    <div class="footer_hr"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="rowtop">
+                <div style="margin: 50px 0 0 0;width: 150px; height: 135px;">
+                    <img src="../image/LOGO.png" width="100%" alt="">
+                </div>
+                <div style="margin: 0  30px 0;">
+                    <div style="margin: 0 0 8px 0;">
+                        <h6>關於我們</h6>
+                        <hr style="border: 1px solid #000;width: 120px;">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="">首頁</a></li>
+                        <li><a href="">桌遊介紹</a></li>
+                        <li><a href="">餐點介紹</a></li>
+                        <li><a href="">消費方式</a></li>
+                        <li><a href="">門市資訊</a></li>
+                    </ul>
+                </div>
+
+                <div style="margin: 0 0 30px 0;">
+                    <div style="margin: 0 0 8px 0;">
+                        <h6>商城服務</h6>
+                        <hr style="border: 1px solid #000;width: 120px;">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="">加入會員</a></li>
+                        <li><a href="">會員中心</a></li>
+                        <li><a href="">線上商城</a></li>
+                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="">常見問題</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="social-icons">
+                        <div class="FB aaa">
+                            <img src="../image/facebook_icon.png" width="100%" alt="">
+                        </div>
+                        <!-- Line -->
+                        <div class="Line aaa">
+                            <img src="../image/line_icon.png" width="100%" alt="">
+                        </div>
+                        <!-- IG -->
+                        <div class="IG aaa">
+                            <img src="../image/instagram_icon.png" width="100%" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 2px solid #000;">
+
+        <div class="container">
+            <div class="rowdown">
+                <div>
+                    <p class="footerbottom-text">
+                        本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。此作品僅為練習及創作之用，無其他商業用途，如果作品有冒犯到任何智慧財產權，請聯繫f4frodojerry123@gmail.com，會盡速撤銷作品。
+                        This work is only for practicing and creation, and has no other commercial purposes. If the work
+                        violates any intellectual property rights, please contact f4frodojerry123@gmail.com, and the
+                        work will be withdrawn as soon as possible
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

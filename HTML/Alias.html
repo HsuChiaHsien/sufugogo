@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>估估劃劃旅行版</title>
+    <link rel="stylesheet" href="../CSS/header_fixed.css">
+    <link rel="stylesheet" href="../CSS/Alias.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="topnav" style="background-color: #fffae7; position: static;">
+        <!-- 導覽列的展開清單 -->
+        <div class="navleft">
+            <div class="hb_box">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="hb_list" style="background-color: #fffae7;">
+                    <div class="menu"></div>
+                </label>
+                <div class="menu_list">
+                    <ul>
+                        <li><a href="../HTML/index.html">首頁</a></li>
+                        <li><a href="../HTML/AboutUs.html">關於我們</a></li>
+                        <li><a href="../HTML/BoardGame.html">趣味桌遊</a></li>
+                        <li><a href="../HTML/FineDining.html">精緻餐點</a></li>
+                        <li><a href="../HTML/BoardGameMall.html">桌遊商城</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- navlogo -->
+            <div class="navlogo">
+                <a href="../HTML/index.html"><img src="../image/LOGO.png" width="100%" alt=""></a>
+            </div>
+        </div>
+        <div class="navcenter">
+            <!-- search_icon -->
+            <div class="search" style="width: 25px; height: 25px;">
+                <img src="../image/search_icon.png" width="100%" alt="">
+            </div>
+            <!-- navinput -->
+            <div class="navinput">
+                <form action="">
+                    <div>
+                        <input type="search" style="background-color: #fff;border: 0px solid #000;height: 25px;"
+                            placeholder="請輸入桌遊名稱">
+                        <input type="button" value="搜尋" style="background-color: transparent; border: 0;">
+                    </div>
+                </form>
+            </div>
+            <!-- shoppingcart -->
+            <div class="navshoppingcart" style="width: 25px;height: 25px;margin: 0 50px 0 0;">
+                <a href=""><img src="../image/shoppingcar_icon.png" width="100%" alt=""></a>
+            </div>
+            <!-- memberlogin -->
+            <div class="memberlogin">
+                <a href="">會員登入</a>
+            </div>
+        </div>
+        <div class="navright">
+            <!-- FB -->
+            <div class="FB navsocialicon">
+                <img src="../image/facebook_icon.png" width="100%" alt="">
+            </div>
+            <!-- Line -->
+            <div class="Line navsocialicon">
+                <img src="../image/line_icon.png" width="100%" alt="">
+            </div>
+            <!-- IG -->
+            <div class="IG navsocialicon">
+                <img src="../image/instagram_icon.png" width="100%" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <div class="header_hr"></div>
+
+    <div class="breadcrumb">
+        <a href="">商城服務</a>
+        <a href="">派對遊戲</a>
+        <span>估估劃劃旅行版</span>
+    </div>
+
+    <div class="p_view">
+        <div style="display: flex; justify-content: space-evenly;">
+            <div class="pImgBlock">
+                <div class="product_img_group">
+                    <img id="product_img_big" src="../image/Alias_big.png">
+                </div>
+                <div id="product_img">
+                    <img src="../image/Alias_small.png" />
+                    <img src="../image/Alias_small_2.png" />
+                    <img src="../image/Alias_small_3.png" />
+                </div>
+
+            </div>
+            <div class="product_main">
+                <h1 style="margin: 10px 0 12px 25px; font-size: 2em;">估估劃劃旅行版</h1>
+                <div id="priceArea">
+                    <h3>NT$</h3>
+                    <h3 id="countPrice"> 590 </h3>
+                </div>
+                <div class="mini_text">
+                    <div class="mini_box">售價 : <span class="price">590元 </span>( 會員價現省 <span>59</span>元 <a
+                            href="">了解會員等級</a> )</div>
+
+                </div>
+                <div class="list_text">
+                    <div id="count_place">
+                        <span id="buy_count" class="fare" style="margin-left: 60px;">數量 : </span>
+                        <input type="button" value="-" class="qtyminus" field="quantity" style="margin-left: 14px;"
+                            disabled>
+                        <input type="text" value="0" name="quantity" class="qty" id="buy_num" disabled>
+                        <input type="button" value="+" class="qtyplus" field="quantity" style="margin-right: 14px;"
+                            disabled>
+                        <span>無庫存</span>
+                        <span id="inventoryBust"></span>
+                    </div>
+                </div>
+                <div class="buyArea">
+                    <button class="carButton" style="background-color: white; border-color: #bcf443; color: #bcf443;"
+                        onclick=" getProductInventory(4)">
+                        <i class="fas fa-cart-plus"></i>
+                        加入購物車
+                    </button>
+                    <button class="carButton" style="background-color: #bcf443; border-color: white; color: white;"
+                        onclick="getProductInventory(2)">
+                        <i class="far fa-credit-card"></i>
+                        直接結帳
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="attributeArea">
+            <div class="list_text_group">
+
+                <div class="list_text">
+                    <div class=" title_box">遊戲特色 :
+                        <p style="margin-left: 35px;">
+                            分隊猜題競賽，玩家在各自隊伍輪流擔任出題者，在有限的時間內盡可能讓隊友猜到謎底，答對越多張可以前進劃掉越多，最先抵達終點的隊伍獲得勝利！
+                        </p>
+                    </div>
+                </div>
+
+                <div class="list_text">
+                    <div class="title_box">遊戲類別：<a href="">派對遊戲</a></div>
+                </div>
+                <div class="list_text">
+                    <div class="title_box">遊戲適齡：<span>6歲</span></div>
+                </div>
+                <div class="list_text">
+                    <div class="title_box">遊戲主題： <span>
+                            <a target="_blank" href="">可愛 </a> <a target="_blank" href="">歡樂
+                            </a> </span></div>
+                </div>
+
+
+                <div class="list_text">
+                    <div class="title_box">遊戲機制： <span>
+                            <a target="_blank" href="">想像力 </a><a target="_blank" href="">表達能力 </a> </span></div>
+                </div>
+
+                <div class="list_text">
+                    <div class="title_box">語言：<span>繁中</span></div>
+                </div>
+
+                <div class="list_text">
+                    <div class="title_box">銷售數量：<span>新品上市 </span></div>
+                </div>
+                <div class="list_text">
+                    <div class="title_box">卡套資訊： <span>*尚無卡套資訊</span></div>
+                </div>
+            </div>
+
+            <div class="product_cont">
+
+                <div class="btn_list_tab">
+                    <ul>
+                        <li style="width: 1080px; background-color:#bcf443; color:#fff;">商品介紹</li>
+                    </ul>
+                </div>
+                <div class="tab_cont" style="display:block; margin-top:20px;">
+
+                    <p>***配件內容 : 遊戲計分圖 x 1,計時沙漏 x 1,鉛筆 x 1,詞語卡牌 x 100（共800個詞語）</p>
+                    <br>
+
+                    <h3>規則簡介</h3>
+
+                    <ol>
+                        <li>1. 洗牌後將詞語牌庫朝下放在遊戲計分圖旁。玩家組成最少兩個成員的隊伍(最少兩隊)，商量好回合的先後順序。每隊取1張遊戲計分圖，並在第一個劃掉。</li>
+                        <li>2. 輪到你那一隊時，選擇一位玩家擔任<strong>「描述者」</strong>（每個人都要輪到），手持一疊詞語卡，不可給其他人看到答案。</li>
+                        <li>3. 翻轉沙漏，你們那隊的回合正式開始！</li>
+                        <li>4. 描述者必須按己隊前回合在計分圖最後劃掉的格子所顯示之數字，描述牌上對應詞語。，怎麼講都行，但就是不可以講到答案上的文字！</li>
+                        <li>5. 時間到即結算該回合的成果；<strong>按照答對結果，向前劃出等量格數</strong>，若出現負數現況，則視作沒有得分。</li>
+                        <li>6. 隊伍描述者必須輪流替換，讓每名隊友都有機會擔當。</li>
+                        <li>7. 最先到達終點(劃掉權全部空格)的一隊獲勝</li>
+                    </ol>
+                </div>
+
+                <a href="#topnav"><input style="width:20%; margin:10px 35%; text-align:center;" type="text"
+                        value="回到頁面上方 ↑" class="btn"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_hr"></div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="rowtop">
+                <div style="margin: 50px 0 0 0;width: 150px; height: 135px;">
+                    <img src="../image/LOGO.png" width="100%" alt="">
+                </div>
+                <div style="margin: 0  30px 0;">
+                    <div style="margin: 0 0 8px 0;">
+                        <h6>關於我們</h6>
+                        <hr style="border: 1px solid #000;width: 120px;">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="">首頁</a></li>
+                        <li><a href="">桌遊介紹</a></li>
+                        <li><a href="">餐點介紹</a></li>
+                        <li><a href="">消費方式</a></li>
+                        <li><a href="">門市資訊</a></li>
+                    </ul>
+                </div>
+
+                <div style="margin: 0 0 30px 0;">
+                    <div style="margin: 0 0 8px 0;">
+                        <h6>商城服務</h6>
+                        <hr style="border: 1px solid #000;width: 120px;">
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="">加入會員</a></li>
+                        <li><a href="">會員中心</a></li>
+                        <li><a href="">線上商城</a></li>
+                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="">常見問題</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="social-icons">
+                        <div class="FB aaa">
+                            <img src="../image/facebook_icon.png" width="100%" alt="">
+                        </div>
+                        <!-- Line -->
+                        <div class="Line aaa">
+                            <img src="../image/line_icon.png" width="100%" alt="">
+                        </div>
+                        <!-- IG -->
+                        <div class="IG aaa">
+                            <img src="../image/instagram_icon.png" width="100%" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border: 2px solid #000;">
+
+        <div class="container">
+            <div class="rowdown">
+                <div>
+                    <p class="footerbottom-text">
+                        本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。此作品僅為練習及創作之用，無其他商業用途，如果作品有冒犯到任何智慧財產權，請聯繫f4frodojerry123@gmail.com，會盡速撤銷作品。
+                        This work is only for practicing and creation, and has no other commercial purposes. If the work
+                        violates any intellectual property rights, please contact f4frodojerry123@gmail.com, and the
+                        work will be withdrawn as soon as possible
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showLarge(e) { //e是事件物件
+            //e.target:指點按在哪一個物件
+            document.getElementById("product_img_big").src = e.target.src;
+
+
+
+        }
+
+        function init() {
+            let smalls = document.querySelectorAll("#product_img img");
+            for (let i = 0; i < smalls.length; i++) {
+                smalls[i].onclick = showLarge;
+            }
+
+        }
+
+        window.addEventListener("load", init, false);
+    </script>
+
+</body>
+
+</html>

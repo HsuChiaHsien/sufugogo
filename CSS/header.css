@@ -1,0 +1,199 @@
+.header_box {
+    width: 100%;
+    position: relative;
+}
+
+.header_box img {
+    display: block;
+    width: 100%;
+    height: 630px;
+}
+
+.headertxt {
+    position: absolute;
+    bottom: 24%;
+    left: 41%;
+    text-shadow:
+        -1px 0px 0px #fff,
+        1px 0px 0px #fff,
+        0px -1px 0px #fff,
+        0px 1px 0px #fff;
+    color: #000;
+    font-weight: 900;
+}
+
+#topnav {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navleft {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 80px;
+}
+
+.navcenter {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 10px;
+}
+
+.navright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.navinput {
+    margin-right: 10px;
+}
+
+.navsocialicon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.Line {
+    margin: 0 30px;
+}
+
+.nav_box .search {
+    width: 25px;
+    height: 25px;
+}
+
+.memberlogin a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.hb_list {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 16px;
+    position: fixed;
+    z-index: 2;
+}
+
+.hb_list .menu,
+.hb_list .menu::before,
+.hb_list .menu::after {
+    background: #222;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+    width: 20px;
+}
+
+.hb_list .menu {
+    left: 18px;
+    top: 27px;
+}
+
+.hb_list .menu::before {
+    top: -6px;
+}
+
+.hb_list .menu::after {
+    top: 6px;
+}
+
+#menu:checked+.hb_list .menu {
+    background: transparent;
+}
+
+#menu:checked+.hb_list .menu::before {
+    transform: rotate(45deg);
+}
+
+#menu:checked+.hb_list .menu::after {
+    transform: rotate(-45deg);
+}
+
+#menu:checked+.hb_list .menu::before,
+#menu:checked+.hb_list .menu::after {
+    top: 0;
+    transition: top ease .3s, transform ease .3s .3s;
+}
+
+#menu:checked~.menu_list {
+    width: 200px;
+}
+
+.menu_list {
+    width: 60px;
+    height: 100vh;
+    /* background: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1); */
+    padding-top: 60px;
+    position: fixed;
+    z-index: 1;
+    transition: all .6s;
+    overflow: hidden;
+    margin-left: -70px;
+}
+
+/*
+選單向外推
+*/
+.menu_list ul {
+    list-style: none;
+    margin-left: 95px;
+    padding: 0;
+    background: #fffae7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 200%;
+    text-align: center;
+}
+
+.menu_list ul a {
+    text-decoration: none;
+    color: #222;
+}
+
+.menu_list ul>li {
+    display: block;
+    width: 100px;
+}
+
+/*
+隱藏核許框
+*/
+input#menu {
+    display: none;
+}
+
+.navlogo {
+    width: 152px;
+    height: 46px;
+    margin: 6px 0 6px 70px;
+}
+
+.header_hr {
+    background-image: linear-gradient(to bottom, #fffae7, #ffffff);
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+}
