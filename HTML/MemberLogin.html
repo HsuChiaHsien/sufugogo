@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal__wrapper show">
+        <div class="modal__backdrop show"></div>
+        <div class="modal modal__main modal-sign show">
+            <button type="button" class="btn modal__btn--close"></button>
+            <div class="modal__box show" id="signin">
+                <div class="modal__header">
+                    <span class="modal__header--back">會員登入</span>
+                </div>
+                <div class="modal__body">
+                    <div class="modal-sign__form">
+                        <div class="field__group">
+                            <div class="field__label">帳號</div>
+                            <input type="email" maxlength="50" class="input field__control" placeholder="請填寫註冊時使用的信箱">
+                        </div>
+                        <div class="field__group">
+                            <div class="field__label">密碼</div>
+                            <input type="password" maxlength="100" class="input field__control"
+                                placeholder="至少5碼以上的英文和數字">
+                            <a class="field__more" href="#">忘記密碼</a>
+                        </div>
+                        <div class="field__group with-addon">
+                            <div class="field__label">驗證碼</div>
+                            <input type="text" class="txb_code input field__control CAPTCHATextClass input_province"
+                                placeholder="請輸入驗證碼(不分大小寫)">
+                            <div class="captcha_a">
+                                <img style="cursor: pointer; width: 93px; height: 30px; display:block;" id="imgCode"
+                                    title="如果圖片看不清楚，請點擊重新生成新驗證碼！" src="../image/VerificationCode.jpg"
+                                    alt="如果圖片看不清楚，請點擊重新生成新驗證碼！">
+                                <a class="captcha_a" href="#" title="重新產生">
+                                    <input type="button" value="重新產生">
+                                </a>
+                                <a class="a_2" title="語音播放" href="#">
+                                    <input type="button" value="語音播放">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="field__action">
+                            <button type="submit" class="btn btn--green btn__signin btn__logon">
+                                <span>登入</span>
+                            </button>
+                            <button type="button" class="btn btn--ghost btn__go-signup btn__ghost__logon">
+                                <span>還沒有帳號？馬上註冊！</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal__outter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

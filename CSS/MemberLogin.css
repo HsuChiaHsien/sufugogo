@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #fff;
+}
+
+.modal__wrapper.show {
+    pointer-events: auto;
+    overflow-y: scroll !important;
+    display: block;
+    text-align: center;
+}
+
+.modal__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999;
+    display: none;
+    pointer-events: none;
+    justify-content: center;
+    overflow: scroll;
+    padding: 20px 10px 80px;
+    transition: .3s;
+}
+
+.show {
+    display: block;
+}
+
+.modal__wrapper.show > * {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    pointer-events: auto;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.modal__backdrop.show {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal__wrapper > * {
+    pointer-events: auto;
+    opacity: 0;
+    display: none;
+    transform: translate3d(0, -100%, 0);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.modal__backdrop {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 0;
+    display: none;
+    transition: .3s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.modal__wrapper.show {
+    pointer-events: auto;
+    overflow-y: scroll !important;
+    display: block;
+    text-align: center;
+}
+
+.modal-sign {
+    z-index: 999999;
+}
+
+.modal__main {
+    display: inline-block !important;
+}
+
+.btn {
+    /* -webkit-appearance: none; */
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.modal__btn--close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    right: -18px;
+    color: #000;
+    background: #fff !important;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+
+button {
+    overflow: visible;
+}
+
+.modal__box.show {
+    display: block;
+}
+
+.modal__box {
+    display: none;
+    width: 670px;
+    margin: 20px auto 90px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.2);
+    will-change: auto;
+    position: relative;
+    -webkit-animation: showmodal 400ms forwards;
+    animation: showmodal 400ms forwards;
+}
+
+.modal__header {
+    padding: 16px;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+    font-size: 1.25rem;
+    text-align: center;
+    position: relative;
+}
+
+.modal__header--back {
+    padding-right: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+.modal__body {
+    padding: 20px 25px;
+    text-align: center;
+}
+
+.modal-sign__form {
+    text-align: left;
+    padding: 0 20%;
+}
+
+.field__group {
+    margin: 20px 0;
+    position: relative;
+}
+
+.field__label {
+    color: #5C5D5F;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+.field__control.input, .field__control.date {
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    box-shadow: 0 5px 22px -6px rgba(0, 0, 0, 0.14);
+    border-radius: 6px;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    font-size: 1.125rem;
+    outline: none;
+    transition: .3s;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+input {
+    line-height: normal;
+}
+
+input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.with-addon .field__control.input, .with-addon .field__control.date {
+    width: 70%;
+    float: left;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    margin-right: 10px;
+}
+
+.captcha_a {
+    margin-right: 15px;
+}
+
+#imgCode {
+    margin-bottom: 20px;
+    top: 8px;
+    position: relative;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    color: #0f89e2;
+    cursor: pointer;
+}
+
+.btn__logon {
+    width: 39%;
+    margin: 40px 28px 20px 0px;
+    display: inline-block;
+}
+
+.btn__signin, .btn__signup, .btn__gat-verification {
+    width: 80%;
+    margin: 40px auto 20px;
+    display: block;
+}
+
+.btn--green {
+    line-height: 45px;
+    text-align: center;
+    position: relative;
+    border-radius: 45px;
+    color: #fff;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+.btn__ghost__logon {
+    color: #6d6d6d;
+    background: rgba(255, 255, 255, 0.51);
+    border: 1px solid #dedcdc;
+}
+
+.btn--ghost {
+    line-height: 45px;
+    text-align: center;
+    position: relative;
+    border-radius: 45px;
+    color: #fff;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid #fff;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
