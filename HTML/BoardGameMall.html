@@ -18,130 +18,99 @@
 </head>
 
 <body>
-    <div class="header_box">
-        <img src="../image/aboutus.png" alt="headerimg">
-        <div class="headertxt">
-            <div style="font-size: 64px;">
+    <!-- header navbar -->
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="../image/LOGO.png">
+            </a>
+        </div>
+    
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    
+        <nav class="main-nav">
+            <a href="#">關於我們</a>
+            <a href="#">趣味桌遊</a>
+            <a href="#">精緻餐點</a>
+            <a href="#">桌遊商城</a>
+        </nav>
+    
+        <div class="search">
+            <img src="../image/search_icon.png" alt="search_icon">
+            <form action="">
+                <input type="search" class="search_input_search" placeholder=" 請輸入桌遊名稱">
+            </form>
+        </div>
+    </header>
+    <!-- header navbar -->
+    
+    <!-- big image area -->
+    <div class="bigimageArea" style="background-image: url(../image/BoardGameMall_big.jpg);">
+        <div class="bigimageArea_txt">
+            <h1>
                 桌遊商城
-            </div>
+            </h1>
         </div>
     </div>
-    <div class="nav_box">
-        <nav id="topnav">
-            <!-- 導覽列的展開清單 -->
-            <div class="navleft">
-                <div class="hb_box">
-                    <input type="checkbox" id="menu">
-                    <label for="menu" class="hb_list">
-                        <div class="menu"></div>
-                    </label>
-                    <div class="menu_list">
-                        <ul>
-                            <li><a href="../HTML/index.html">首頁</a></li>
-                            <li><a href="../HTML/AboutUs.html">關於我們</a></li>
-                            <li><a href="../HTML/BoardGame.html">趣味桌遊</a></li>
-                            <li><a href="../HTML/FineDining.html">精緻餐點</a></li>
-                            <li><a href="../HTML/BoardGameMall.html">桌遊商城</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- navlogo -->
-                <div class="navlogo">
-                    <a href="../HTML/index.html"><img src="../image/LOGO.png" width="100%" alt=""></a>
-                </div>
-            </div>
-            <div class="navcenter">
-                <!-- search_icon -->
-                <div class="search">
-                    <img src="../image/search_icon.png" width="100%" alt="">
-                </div>
-                <!-- navinput -->
-                <div class="navinput">
-                    <form action="">
-                        <div>
-                            <input type="search" style="background-color: #ddd;border: 0px solid #000;height: 25px;"
-                                placeholder="請輸入桌遊名稱">
-                            <input type="button" value="搜尋" style="background-color: #fff;border: 0;">
-                        </div>
-                    </form>
-                </div>
-                <!-- shoppingcart -->
-                <div class="navshoppingcart" style="width: 25px;height: 25px;margin: 0 50px 0 0;">
-                    <a href=""><img src="../image/shoppingcar_icon.png" width="100%" alt=""></a>
-                </div>
-                <!-- memberlogin -->
-                <div class="memberlogin">
-                    <a href="">會員登入</a>
-                </div>
-            </div>
-            <div class="navright">
-                <!-- FB -->
-                <div class="FB navsocialicon">
-                    <img src="../image/facebook_icon.png" width="100%" alt="">
-                </div>
-                <!-- Line -->
-                <div class="Line navsocialicon">
-                    <img src="../image/line_icon.png" width="100%" alt="">
-                </div>
-                <!-- IG -->
-                <div class="IG navsocialicon">
-                    <img src="../image/instagram_icon.png" width="100%" alt="">
-                </div>
-            </div>
-        </nav>
-    </div>
+    <!-- big image area -->
+    
     <div class="header_hr"></div>
 
-    <div style="display: flex; justify-content: space-evenly; width: 1260px; margin: 0 auto;">
+    <div class="menu_list_left">
         <div class="mallnav_box">
-            <a href="">
+            <a href="#">
+                <img src="../image/HotGame.png" alt="派對遊戲">
                 <h3>
-                    <img src="../image/HotGame.png" alt="派對遊戲">
-                    熱門遊戲
+                    &nbsp熱門遊戲
                 </h3>
             </a>
             <a href="../HTML/Mall_a.html">
+                <img src="../image/PartyGame.png" alt="派對遊戲">
                 <h3>
-                    <h3>
-                        <img src="../image/PartyGame.png" alt="派對遊戲">
-                        派對遊戲
-                    </h3>
+                    &nbsp派對遊戲
                 </h3>
             </a>
-            <a href="">
+            <a href="#">
+                <img src="../image/StrategyGame.png" alt="策略遊戲">
                 <h3>
-                    <img src="../image/StrategyGame.png" alt="策略遊戲">
-                    策略遊戲
+                    &nbsp策略遊戲
                 </h3>
             </a>
-            <a href="">
+            <a href="#">
+                <img src="../image/Parent-childBoardGame.png" alt="親子桌遊">
                 <h3>
-                    <img src="../image/Parent-childBoardGame.png" alt="親子桌遊">
-                    親子桌遊
+                    &nbsp親子桌遊
                 </h3>
             </a>
-            <a href="">
+            <a href="#">
+                <img src="../image/ChessGame.png" alt="棋奕遊戲">
                 <h3>
-                    <img src="../image/ChessGame.png" alt="棋奕遊戲">
-                    棋奕遊戲
+                    &nbsp棋奕遊戲
                 </h3>
             </a>
-            <a href="">
+            <a href="#">
+                <img src="../image/ThematicGame.png" alt="主題遊戲">
                 <h3>
-                    <img src="../image/ThematicGame.png" alt="主題遊戲">
-                    主題遊戲
+                    &nbsp主題遊戲
                 </h3>
             </a>
-            <a href="">
+            <a href="#">
+                <img src="../image/FamilyGame.png" alt="家庭遊戲">
                 <h3>
-                    <img src="../image/FamilyGame.png" alt="家庭遊戲">
-                    家庭遊戲
+                    &nbsp家庭遊戲
                 </h3>
             </a>
-            <a href="">
+            <a href="#">
+                <img src="../image/AccessoriesSection.png" alt="配件專區">
                 <h3>
-                    <img src="../image/AccessoriesSection.png" alt="配件專區">
-                    配件專區
+                    &nbsp配件專區
                 </h3>
             </a>
         </div>
@@ -274,7 +243,7 @@
             <a href="">
                 <li>
                     <div class="typeName_2" style="border-top-color: rgb(190, 30 ,45);">
-                        新品推薦
+                        門市暢銷
                         <input type="hidden" value="">
                     </div>
                 </li>
@@ -282,7 +251,7 @@
             <a href="">
                 <li>
                     <div class="typeName_2" style="border-top-color: rgb(191, 191 ,191);">
-                        每周推薦
+                        經典收藏
                         <input type="hidden" value="">
                     </div>
                 </li>
@@ -290,7 +259,7 @@
             <a href="">
                 <li>
                     <div class="typeName_2" style="border-top-color: rgb(191, 191 ,191);">
-                        暢銷排行榜
+                        教育概念
                         <input type="hidden" value="">
                     </div>
                 </li>
@@ -345,13 +314,14 @@
     <footer class="site-footer">
         <div class="container">
             <div class="rowtop">
-                <div style="margin: 50px 0 0 0;width: 150px; height: 135px;">
+                <div class="footer_logo">
                     <img src="../image/LOGO.png" width="100%" alt="">
                 </div>
-                <div style="margin: 0  30px 0;">
+
+                <div class="footer_txt">
                     <div style="margin: 0 0 8px 0;">
                         <h6>關於我們</h6>
-                        <hr style="border: 1px solid #000;width: 120px;">
+                        <hr>
                     </div>
                     <ul class="footer-links">
                         <li><a href="">首頁</a></li>
@@ -362,10 +332,10 @@
                     </ul>
                 </div>
 
-                <div style="margin: 0 0 30px 0;">
+                <div class="footer_txt">
                     <div style="margin: 0 0 8px 0;">
                         <h6>商城服務</h6>
-                        <hr style="border: 1px solid #000;width: 120px;">
+                        <hr>
                     </div>
                     <ul class="footer-links">
                         <li><a href="">加入會員</a></li>
@@ -375,6 +345,7 @@
                         <li><a href="">常見問題</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <ul class="social-icons">
                         <div class="FB aaa">
@@ -390,6 +361,7 @@
                         </div>
                     </ul>
                 </div>
+                
             </div>
         </div>
 

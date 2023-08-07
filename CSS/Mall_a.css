@@ -82,9 +82,12 @@ select {
 }
 
 .main {
-    width: 798px;
+    /* width: 798px;
     margin: 10px 10px 10px 20px;
-    min-height: 500px;
+    min-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -99,6 +102,13 @@ h1 {
     color: #F60;
 }
 
+.nav_box_left {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1260px;
+    margin: 0 auto;
+}
+
 .box {
     width: 90%;
     margin: 5px 20px 15px 35px;
@@ -108,9 +118,10 @@ h1 {
 }
 
 .box img {
-    width: 100%;
+    width: 150px;
+    height: 150px;
     padding: 1px;
-    border: 1px solid #e1dfdf;
+    /* border: 1px solid #e1dfdf; */
 }
 
 .productName {
@@ -146,7 +157,7 @@ h1 {
 
 .box_img {
     width: 165px;
-   
+
 }
 
 #page {
@@ -168,25 +179,26 @@ h1 {
     padding: 5px;
     border-radius: 5px;
     width: 1080px;
-    margin-bottom: 30px;
-  }
-  
-  /* 麵包屑內的連結樣式 */
-  .breadcrumb a {
-    color: #007bff;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+/* 麵包屑內的連結樣式 */
+.breadcrumb a {
+    color: #333;
     text-decoration: none;
     padding: 2px 5px;
-  }
-  
-  /* 最後一個目前頁面的元素樣式 */
-  .breadcrumb span {
-    color: #333;
+}
+
+/* 最後一個目前頁面的元素樣式 */
+.breadcrumb span {
+    color: #bcf443;
     padding: 2px 5px;
-  }
-  
-  /* 麵包屑連結之間的分隔符號 */
-  .breadcrumb a::after {
+}
+
+/* 麵包屑連結之間的分隔符號 */
+.breadcrumb a::after {
     content: ">";
     margin: 0 5px;
     color: #ccc;
-  }
+}

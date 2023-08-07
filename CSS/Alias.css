@@ -1,5 +1,5 @@
 body {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     font-family: Microsoft JhengHei;
 }
@@ -47,7 +47,7 @@ select {
 }
 
 #product_img_big {
-    width: 96%;
+    width: 90%;
     padding: 2%;
     border-style: outset;
     border-radius: 20px;
@@ -118,12 +118,13 @@ select {
 }
 
 .p_view .list_text {
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.5;
     color: #333;
-    padding: 0px 0px 3px 0;
+    /* padding: 0px 0px 3px 0; */
     width: 100%;
     font-weight: 800;
+    margin: 5px;
 }
 
 .item-purchase {
@@ -180,7 +181,7 @@ input.qtyplus {
 .title_box {
     width: 1120px;
     text-align: right;
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.5;
     font-weight: 800;
     text-align: justify;
@@ -196,7 +197,6 @@ input.qtyplus {
 
 .list_text_group {
     width: 1120px;
-    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -210,13 +210,13 @@ input.qtyplus {
 .btn,
 .smallBtn {
     padding: 0.2em 0.6em;
-    border: 1px solid #bcf443;
+    border: 0;
     border-radius: 0.1em;
     box-shadow: 0 0.2em 0.5em #a7a4a4;
     font-size: 1.25rem;
     line-height: 1.5;
-    background-color: #bcf443;
-    color: #FFF;
+    background-color: #fffae7;
+    color: #333;
     margin: 10px;
     font-weight: bold;
     cursor: pointer;
@@ -234,14 +234,14 @@ input.qtyplus {
 
 /* 麵包屑內的連結樣式 */
 .breadcrumb a {
-    color: #007bff;
+    color: #333;
     text-decoration: none;
     padding: 2px 5px;
 }
 
 /* 最後一個目前頁面的元素樣式 */
 .breadcrumb span {
-    color: #333;
+    color: #bcf443;
     padding: 2px 5px;
 }
 
@@ -256,4 +256,28 @@ input.qtyplus {
     border: none;
     border-bottom-style: double;
     border-bottom-color: #a7a2a2;
+}
+
+.carButton {
+    background-color: #fffae7;
+    color: black;
+    border: 0;
+    font-weight: bold;
+}
+
+.btn_list_tab li {
+    width: 1080px;
+    background-color: #fffae7;
+    color: #333;
+}
+
+.product_main h1 {
+    margin: 10px 0 30px 25px;
+    font-size: 2em;
+}
+
+.tab_cont {
+    display: block;
+    margin-top: 20px;
+    line-height: 200%;
 }

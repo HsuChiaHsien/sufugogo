@@ -18,140 +18,109 @@
 </head>
 
 <body>
-    <div class="header_box">
-        <img src="../image/aboutus.png" alt="headerimg">
-        <div class="headertxt">
-            <div style="font-size: 64px;">
+    <!-- header navbar -->
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="../image/LOGO.png">
+            </a>
+        </div>
+
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">關於我們</a>
+            <a href="#">趣味桌遊</a>
+            <a href="#">精緻餐點</a>
+            <a href="#">桌遊商城</a>
+        </nav>
+
+        <div class="search">
+            <img src="../image/search_icon.png" alt="search_icon">
+            <form action="">
+                <input type="search" class="search_input_search" placeholder=" 請輸入桌遊名稱">
+            </form>
+        </div>
+    </header>
+    <!-- header navbar -->
+
+    <!-- big image area -->
+    <div class="bigimageArea" style="background-image: url(../image/aboutus.png);">
+        <div class="bigimageArea_txt">
+            <h1>
                 關於我們
-            </div>
+            </h1>
         </div>
     </div>
-    <div class="nav_box">
-        <nav id="topnav">
-            <!-- 導覽列的展開清單 -->
-            <div class="navleft">
-                <div class="hb_box">
-                    <input type="checkbox" id="menu">
-                    <label for="menu" class="hb_list">
-                        <div class="menu"></div>
-                    </label>
-                    <div class="menu_list">
-                        <ul>
-                            <li><a href="../HTML/index.html">首頁</a></li>
-                            <li><a href="../HTML/AboutUs.html">關於我們</a></li>
-                            <li><a href="../HTML/BoardGame.html">趣味桌遊</a></li>
-                            <li><a href="../HTML/FineDining.html">精緻餐點</a></li>
-                            <li><a href="../HTML/BoardGameMall.html">桌遊商城</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- navlogo -->
-                <div class="navlogo">
-                    <a href="../HTML/index.html"><img src="../image/LOGO.png" width="100%" alt=""></a>
-                </div>
-            </div>
-            <div class="navcenter">
-                <!-- search_icon -->
-                <div class="search">
-                    <img src="../image/search_icon.png" width="100%" alt="">
-                </div>
-                <!-- navinput -->
-                <div class="navinput">
-                    <form action="">
-                        <div>
-                            <input type="search" style="background-color: #ddd;border: 0px solid #000;height: 25px;"
-                                placeholder="請輸入桌遊名稱">
-                            <input type="button" value="搜尋" style="background-color: #fff;border: 0;">
-                        </div>
-                    </form>
-                </div>
-                <!-- shoppingcart -->
-                <div class="navshoppingcart" style="width: 25px;height: 25px;margin: 0 50px 0 0;">
-                    <a href=""><img src="../image/shoppingcar_icon.png" width="100%" alt=""></a>
-                </div>
-                <!-- memberlogin -->
-                <div class="memberlogin">
-                    <a href="">會員登入</a>
-                </div>
-            </div>
-            <div class="navright">
-                <!-- FB -->
-                <div class="FB navsocialicon">
-                    <img src="../image/facebook_icon.png" width="100%" alt="">
-                </div>
-                <!-- Line -->
-                <div class="Line navsocialicon">
-                    <img src="../image/line_icon.png" width="100%" alt="">
-                </div>
-                <!-- IG -->
-                <div class="IG navsocialicon">
-                    <img src="../image/instagram_icon.png" width="100%" alt="">
-                </div>
-            </div>
-        </nav>
-    </div>
+    <!-- big image area -->
 
     <div class="header_hr"></div>
 
-    <div style="width: 1260px; margin: 0 auto;">
-        <div class="idea" style="padding-top: 50px;">
-            <h5 style="letter-spacing: 20px;text-align: center;font-size: 32px;">理念</h5>
-            <hr>
-            <p
-                style="letter-spacing: 1px;text-align: center;line-height: 300%;font-weight: 700;text-shadow: 0.1em 0.1em 0.2em #555; margin: 30px; letter-spacing: 2px;">
-                對於每位喜歡桌遊而前來光顧的朋友們<br>
-                我們在此提供了<br>
-                舒適的環境、豐富的桌遊、美味的餐點<br>
-                讓大家能體驗到「舒服狗狗」般的享受
-            </p>
-        </div>
 
-        <div class="wrap" style="height: auto;">
-            <div class="card">
-                <div class="pic">
-                    <img src="../image/ComfortableEnvironment.png">
-                </div>
-                <div class="txt">
-                    <h3 style="font-size: 20px;margin-bottom: 10px;text-align: center;letter-spacing: 2px;">舒適的桌遊環境</h3>
-                    <p style="line-height: 200%; font-weight: 500;letter-spacing: 1px; text-align: justify;">
-                        我們有著乾淨、明亮與整潔的舒服環境，是朋友相聚的好所在。</p>
-                </div>
+    <div class="idea">
+        <h5>理念</h5>
+        <hr>
+        <p>
+            對於每位喜歡桌遊而前來光顧的朋友們<br>
+            我們在此提供了<br>
+            舒適的環境、豐富的桌遊、美味的餐點<br>
+            讓大家能體驗到「舒服狗狗」般的享受
+        </p>
+    </div>
+
+    <div class="wrap">
+        <div class="card">
+            <div class="pic">
+                <img src="../image/ComfortableEnvironment.png">
             </div>
-            <div class="card">
-                <div class="pic">
-                    <img src="../image/AboutAsBoardGame.png">
-                </div>
-                <div class="txt">
-                    <h3 style="font-size: 20px;margin-bottom: 10px;text-align: center;letter-spacing: 2px;">豐富的桌遊項目</h3>
-                    <p style="line-height: 200%; font-weight: 500;letter-spacing: 1px; text-align: justify;">
-                        我們有上百種桌遊任您挑選遊玩，完全不用擔心不知道能玩什麼</p>
-                </div>
+            <div class="txt">
+                <h3>舒適的桌遊環境</h3>
+                <p>
+                    我們有著乾淨、明亮與整潔的舒服環境，是朋友相聚的好所在。</p>
             </div>
-            <div class="card">
-                <div class="pic">
-                    <img src="../image/AboutAsGoodFood.png">
-                </div>
-                <div class="txt">
-                    <h3 style="font-size: 20px;margin-bottom: 10px;text-align: center;letter-spacing: 2px;">美味的精緻餐點</h3>
-                    <p style="line-height: 200%; font-weight: 500;letter-spacing: 1px; text-align: justify;">
-                        我們有提供美味的餐點，讓您在歡樂遊玩之餘也不怕肚子餓，享受更美好的桌遊體驗。</p>
-                </div>
+        </div>
+        <div class="card">
+            <div class="pic">
+                <img src="../image/AboutAsBoardGame.png">
+            </div>
+            <div class="txt">
+                <h3>豐富的桌遊項目</h3>
+                <p>
+                    我們有上百種桌遊任您挑選遊玩，完全不用擔心不知道能玩什麼。</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="pic">
+                <img src="../image/AboutAsGoodFood.png">
+            </div>
+            <div class="txt">
+                <h3>美味的精緻餐點</h3>
+                <p>
+                    我們有提供美味的餐點，讓您在歡樂遊玩之餘也不怕肚子餓，享受更美好的桌遊體驗。</p>
             </div>
         </div>
     </div>
 
-    <div class="idea" style="width: 1260px; margin: 0 auto;">
-        <h5 style="letter-spacing: 20px;text-align: center;font-size: 32px;">店裡的舒服狗狗</h5>
+
+    <div class="idea">
+        <h5>店裡的舒服狗狗</h5>
         <hr>
     </div>
-    <div class="wrap" style="height: auto; width: 1260px;">
+    <div class="wrap_sufugogo">
         <div class="card">
             <div class="pic">
                 <img src="../image/nini.png">
             </div>
             <div class="txt">
-                <h3 style="font-size: 20px;margin-bottom: 10px;text-align: center;letter-spacing: 3px;">NiNi</h3>
-                <p style="line-height: 200%; font-weight: 500;letter-spacing: 1px;">NiNi是一隻迷人、聰明的柯基犬，具有友善和活潑的個性。</p>
+                <h3>NiNi</h3>
+                <p>NiNi是一隻迷人、聰明的柯基犬，具有友善和活潑的個性。</p>
             </div>
         </div>
         <div class="card">
@@ -159,29 +128,28 @@
                 <img src="../image/pipi.png">
             </div>
             <div class="txt">
-                <h3 style="font-size: 20px;margin-bottom: 10px;text-align: center;letter-spacing: 3px;">PiPi</h3>
-                <p style="line-height: 200%; font-weight: 500;letter-spacing: 1px;">PiPi是一隻迷人、活潑的臘腸狗，擁有獨特的個性和無盡的快樂能量！
+                <h3>PiPi</h3>
+                <p>PiPi是一隻迷人、活潑的臘腸狗，擁有獨特的個性和無盡的快樂能量！
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="idea" style="width: 1260px; margin: 0 auto;">
-        <h5 style="letter-spacing: 20px;text-align: center;font-size: 32px;">門市資訊</h5>
+    <div class="idea">
+        <h5>門市資訊</h5>
         <hr>
     </div>
-    <div style="display: flex; justify-content: space-evenly; width: 1260px; margin: 0 auto;">
-        <div style="width: 300px;height: 300px; margin-left: 60px; margin-top: 50px; border: 0;">
-            <img src="../image/map.png" alt="">
+    <div class="StoreInformation">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1NnNDGyMNB1hKzR0GwKSnQf2pxBdnqFY&ehbc=2E312F"></iframe>
         </div>
         <div style="margin: 60px;">
-            <p style="line-height: 300%; font-size: 24px; font-weight: 700; letter-spacing: 3px;">
-                臺北市信義區八德路一段99巷1號<br>
-                訂位專線 : 02-30782944<br>
+            <p>
+                桃園市中壢區復興路666號6樓之6<br>
+                訂位專線 : 03-3079666<br>
                 營業時間 : 每日10:00~22:00<br>
             </p>
-            <input type="button" value="線上預約" name="線上預約"
-                style="background-color: #bcf443;border: 0;margin: 10px 0 0 180px;width: 100px; height: 50px; font-size: 20px; font-weight: 700; margin-left: 120px; letter-spacing: 1px;">
+            <input type="button" value="線上預約" name="線上預約">
         </div>
     </div>
     <div class="footer_hr"></div>
@@ -189,13 +157,14 @@
     <footer class="site-footer">
         <div class="container">
             <div class="rowtop">
-                <div style="margin: 50px 0 0 0;width: 150px; height: 135px;">
+                <div class="footer_logo">
                     <img src="../image/LOGO.png" width="100%" alt="">
                 </div>
-                <div style="margin: 0  30px 0;">
+
+                <div class="footer_txt">
                     <div style="margin: 0 0 8px 0;">
                         <h6>關於我們</h6>
-                        <hr style="border: 1px solid #000;width: 120px;">
+                        <hr>
                     </div>
                     <ul class="footer-links">
                         <li><a href="">首頁</a></li>
@@ -206,10 +175,10 @@
                     </ul>
                 </div>
 
-                <div style="margin: 0 0 30px 0;">
+                <div class="footer_txt">
                     <div style="margin: 0 0 8px 0;">
                         <h6>商城服務</h6>
-                        <hr style="border: 1px solid #000;width: 120px;">
+                        <hr>
                     </div>
                     <ul class="footer-links">
                         <li><a href="">加入會員</a></li>
@@ -219,17 +188,18 @@
                         <li><a href="">常見問題</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <ul class="social-icons">
-                        <div class="FB aaa">
+                        <div class="FB">
                             <img src="../image/facebook_icon.png" width="100%" alt="">
                         </div>
                         <!-- Line -->
-                        <div class="Line aaa">
+                        <div class="Line">
                             <img src="../image/line_icon.png" width="100%" alt="">
                         </div>
                         <!-- IG -->
-                        <div class="IG aaa">
+                        <div class="IG">
                             <img src="../image/instagram_icon.png" width="100%" alt="">
                         </div>
                     </ul>
@@ -252,6 +222,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

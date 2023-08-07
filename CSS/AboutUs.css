@@ -1,11 +1,14 @@
 .wrap {
-    width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid red; */
     justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+.wrap_sufugogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-bottom: 200px;
 }
 
@@ -16,9 +19,23 @@
     margin-top: 5px;
 }
 
+.idea h5 {
+    letter-spacing: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.idea p {
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 300%;
+    font-weight: 700;
+    margin: 30px;
+    letter-spacing: 2px;
+}
+
 .card {
     width: 280px;
-    height: 280px;
     margin: 30px;
     /* box-shadow: 0px 0px 10px #666; */
 }
@@ -35,9 +52,6 @@ h5 {
     font-size: 32px;
 }
 
-.card {
-    overflow: hidden;
-}
 
 .card {
     transform: scale(1, 1);
@@ -46,4 +60,120 @@ h5 {
 
 .card:hover {
     transform: scale(1.2, 1.2);
+}
+
+.txt p {
+    line-height: 200%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.txt h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.StoreInformation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.StoreInformation iframe {
+    width: 400px;
+    height: 300px;
+}
+
+.map {
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.StoreInformation input {
+    background-color: #fffae7;
+    border: 0;
+    margin: 10px 0 0 180px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 120px;
+    letter-spacing: 1px;
+}
+
+.StoreInformation p {
+    line-height: 300%;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+@media screen and (min-width: 1200px) {
+    .idea {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .wrap {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .wrap_sufugogo {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .StoreInformation {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrap_sufugogo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .StoreInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .StoreInformation iframe {
+        width: 200px;
+        height: 200px;
+    }
+
+    .StoreInformation p {
+        font-size: 16px;
+    }
+
+    .StoreInformation input {
+        margin-left: 95px;
+    }
+
 }

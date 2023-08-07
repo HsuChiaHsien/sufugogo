@@ -25,267 +25,297 @@
 </head>
 
 <body>
-    <div class="header_box">
-        <img src="../image/headerimg.png" alt="headerimg">
-        <div class="headertxt">
-            <div style="font-size: 64px;">
+    <!-- header navbar -->
+    <input type="checkbox" name="" id="menu-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="../image/LOGO.png">
+            </a>
+        </div>
+
+        <div class="hb">
+            <label for="menu-switch">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">關於我們</a>
+            <a href="#">趣味桌遊</a>
+            <a href="#">精緻餐點</a>
+            <a href="#">桌遊商城</a>
+        </nav>
+
+        <div class="search">
+            <img src="../image/search_icon.png" alt="search_icon">
+            <form action="">
+                <input type="search" class="search_input_search" placeholder=" 請輸入桌遊名稱">
+            </form>
+        </div>
+    </header>
+    <!-- header navbar -->
+
+
+    <!-- big image area -->
+    <div class="bigimageArea">
+        <div class="bigimageArea_txt">
+            <h1>
                 桌遊x餐飲
-            </div>
-            <div style="font-size: 36px;">
+            </h1>
+            <p>
                 一起來享受桌遊吧!!!
-            </div>
+            </p>
         </div>
     </div>
-    <div class="nav_box">
-        <nav id="topnav">
-            <!-- 導覽列的展開清單 -->
-            <div class="navleft">
-                <div class="hb_box">
-                    <input type="checkbox" id="menu">
-                    <label for="menu" class="hb_list">
-                        <div class="menu"></div>
-                    </label>
-                    <div class="menu_list">
-                        <ul>
-                            <li><a href="../HTML/index.html">首頁</a></li>
-                            <li><a href="../HTML/AboutUs.html">關於我們</a></li>
-                            <li><a href="../HTML/BoardGame.html">趣味桌遊</a></li>
-                            <li><a href="../HTML/FineDining.html">精緻餐點</a></li>
-                            <li><a href="../HTML/BoardGameMall.html">桌遊商城</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- navlogo -->
-                <div class="navlogo">
-                    <a href="../HTML/index.html"><img src="../image/LOGO.png" width="100%" alt=""></a>
-                </div>
-            </div>
-            <div class="navcenter">
-                <!-- search_icon -->
-                <div class="search">
-                    <img src="../image/search_icon.png" width="100%" alt="">
-                </div>
-                <!-- navinput -->
-                <div class="navinput">
-                    <form action="">
-                        <div>
-                            <input type="search" style="background-color: #ddd;border: 0px solid #000;height: 25px;"
-                                placeholder="請輸入桌遊名稱">
-                            <input type="button" value="搜尋" style="background-color: #fff;border: 0;">
-                        </div>
-                    </form>
-                </div>
-                <!-- shoppingcart -->
-                <div class="navshoppingcart" style="width: 25px;height: 25px;margin: 0 50px 0 0;">
-                    <a href=""><img src="../image/shoppingcar_icon.png" width="100%" alt=""></a>
-                </div>
-                <!-- memberlogin -->
-                <div class="memberlogin">
-                    <a href="">會員登入</a>
-                </div>
-            </div>
-            <div class="navright">
-                <!-- FB -->
-                <div class="FB navsocialicon">
-                    <img src="../image/facebook_icon.png" width="100%" alt="">
-                </div>
-                <!-- Line -->
-                <div class="Line navsocialicon">
-                    <img src="../image/line_icon.png" width="100%" alt="">
-                </div>
-                <!-- IG -->
-                <div class="IG navsocialicon">
-                    <img src="../image/instagram_icon.png" width="100%" alt="">
-                </div>
-            </div>
-        </nav>
-    </div>
-
+    <!-- big image area -->
 
     <div class="header_hr"></div>
 
-    <div style="width: 1260px; margin: 0 auto;">
-        <div class="news">
-            <div class="newstitle">
-                <h5>最新消息</h5>
-                <hr>
+    <!-- news area -->
+    <div class="news">
+        <div class="newstitle">
+            <h2>最新消息</h2>
+            <hr>
+        </div>
+        <div class="wrap">
+            <div class="card">
+                <div class="pic">
+                    <a href=""><img src="../image/news_1.jpg"></a>
+                </div>
+                <div class="txt">
+                    <a href="">
+                        <h3>2023 / 07 / 01</h3>
+                        <p>新增許多不管是派對、策略或益智的桌遊，每個都非常有趣，趕緊來體驗 ! ! !</p>
+                    </a>
+                </div>
             </div>
-            <div class="wrap">
-                <div class="card">
-                    <div class="pic">
-                        <a href=""><img src="../image/news_1.jpg"></a>
+            <div class="card">
+                <div class="pic">
+                    <a href=""><img src="../image/news_2.jpg"></a>
+                </div>
+                <div class="txt">
+                    <a href="">
+                        <h3>2023 / 07 / 07</h3>
+                        <p>桌遊商城限時特價，即日起至2023/08/31，所有桌遊特價九折，會員優惠另計 ! ! !</p>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <a href=""><img src="../image/news_3.jpg"></a>
+                </div>
+                <div class="txt">
+                    <a href="">
+                        <h3>2023 / 07 / 15</h3>
+                        <p>即日起至2023/08/31，在本店內消費桌遊時數每人每滿兩小時贈送紅茶一杯 ! ! !</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- news area -->
+
+    <!-- mainArea -->
+    <div class="mainArea">
+        <div style="display: flex;">
+            <div>
+                <img src="../image/FPComfortableEnvironment.png" alt="">
+            </div>
+            <div class="main_txt">
+                <h2>舒適的桌遊環境</h2>
+                <p>我們提供了舒適的環境，在這裡可以盡情地享受宜人和諧的氛圍，讓您能沉浸在好玩有趣的桌遊世界裡。</p>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 50px;">
+            <div class="main_txt">
+                <h2>精緻的美味食物</h2>
+                <p>如果在玩桌遊之餘，也能夠享受美食絕對是最舒服的事情，因此，我們提供了精緻的食物賴讓您有與眾不同的桌遊體驗。</p>
+            </div>
+            <div>
+                <img src="../image/FPGoodFood.png" alt="">
+            </div>
+        </div>
+        <div style="display: flex; margin-top: 50px;">
+            <div>
+                <img src="../image/FPteach.png" alt="">
+            </div>
+            <div class="main_txt">
+                <h2>專業的人員教學</h2>
+                <p>玩桌遊最擔心的莫過於不知道遊戲規則與玩法，但不用害怕，在我們這裡有許多專業的人員，能夠帶領您熟悉您所選擇的任何桌遊。</p>
+            </div>
+        </div>
+    </div>
+    <!-- mainArea -->
+
+
+    <!-- mainArea_max768px -->
+    <div class="mainArea_wrap">
+        <div class="newstitle">
+            <h2>店內特色</h2>
+            <hr>
+        </div>
+        <div class="mainArea_card">
+            <div class="mainArea_pic">
+                <img src="../image/ComfortableEnvironment.png">
+            </div>
+            <div class="mainArea_txt">
+                <h3>舒適的桌遊環境</h3>
+                <p>
+                    我們有著乾淨、明亮與整潔的舒服環境，是朋友相聚的好所在。</p>
+            </div>
+        </div>
+        <div class="mainArea_card">
+            <div class="mainArea_pic">
+                <img src="../image/AboutAsBoardGame.png">
+            </div>
+            <div class="mainArea_txt">
+                <h3>豐富的桌遊項目</h3>
+                <p>
+                    我們有上百種桌遊任您挑選遊玩，完全不用擔心不知道能玩什麼。</p>
+            </div>
+        </div>
+        <div class="mainArea_card">
+            <div class="mainArea_pic">
+                <img src="../image/AboutAsGoodFood.png">
+            </div>
+            <div class="mainArea_txt">
+                <h3>美味的精緻餐點</h3>
+                <p>
+                    我們有提供美味的餐點，讓您在歡樂遊玩之餘也不怕肚子餓，享受更美好的桌遊體驗。</p>
+            </div>
+        </div>
+    </div>
+    <!-- mainArea_max768px -->
+
+
+    <!-- hotgame -->
+    <div class="hotgame">
+        <div class="newstitle">
+            <h2>熱門遊戲</h2>
+            <hr>
+        </div>
+        <div class="hotgame_group">
+            <div class="owl-carousel owl-theme">
+                <div>
+                    <div>
+                        <a href="/HTML/Alias.html"><img src="../image/Alias.png" alt="估估劃劃旅行版"></a>
                     </div>
-                    <div class="txt">
-                        <a href="">
-                            <h3>2023 / 07 / 01</h3>
-                            <p>新增許多不管是派對、策略或益智的桌遊，每個都非常有趣，趕緊來體驗!!!</p>
-                        </a>
+                    <div>
+                        <h4>估估劃劃旅行版</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">派對遊戲</div>
+                        <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="pic">
-                        <a href=""><img src="../image/news_2.jpg"></a>
+
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/Telestrations.png" alt="傳情畫意"></a>
                     </div>
-                    <div class="txt">
-                        <a href="">
-                            <h3>2023 / 07 / 07</h3>
-                            <p>桌遊商城限時特價，即日起至2023/08/31，所有桌遊特價九折，會員優惠另計!!!</p>
-                        </a>
+                    <div>
+                        <h4>傳情畫意</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">派對遊戲</div>
+                        <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="pic">
-                        <a href=""><img src="../image/news_3.jpg"></a>
+
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/Salem1692.png" alt="獵巫鎮"></a>
                     </div>
-                    <div class="txt">
-                        <a href="">
-                            <h3 style="font-size: 10px;margin-bottom: 10px;">2023 / 07 / 15</h3>
-                            <p>即日起至2023/08/31，在本店內消費桌遊時數每人每滿兩小時贈送紅茶一杯!!!</p>
-                        </a>
+                    <div>
+                        <h4>獵巫鎮</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">派對遊戲</div>
+                        <div class="GameCondition">人數 4~5人<br>適齡 12+</div>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/ThreeKingdomsKill.png" alt=""></a>
+                    </div>
+                    <div>
+                        <h4>三國殺</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">派對遊戲</div>
+                        <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/WitchHunter.png" alt="女巫獵人"></a>
+                    </div>
+                    <div>
+                        <h4>女巫獵人</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">派對遊戲</div>
+                        <div class="GameCondition">人數 2~6人<br>適齡 5+</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/SnowTime.png" alt="雪之時"></a>
+                    </div>
+                    <div>
+                        <h4>雪之時</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">策略遊戲</div>
+                        <div class="GameCondition">人數 3~5人<br>適齡 10+</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/BombArena2.png" alt="炸彈競技場2"></a>
+                    </div>
+                    <div>
+                        <h4>炸彈競技場2</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">派對遊戲</div>
+                        <div class="GameCondition">人數 2~9人<br>適齡 8+</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="#"><img src="../image/ThreeKingdomsKillMyth.png" alt="三國殺:神話"></a>
+                    </div>
+                    <div>
+                        <h4>三國殺 : 神話</h4>
+                    </div>
+                    <div class="hotgame_txt">
+                        <div class="GameType">策略遊戲</div>
+                        <div class="GameCondition">人數 2~10人<br>適齡 5+</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="inter">
-        <div style="width: 1260px; margin: 0 auto;">
-            <div class="main_gb">
-                <div class="main">
-                    <div style="display: flex;">
-                        <div>
-                            <img src="../image/FPComfortableEnvironment.png" alt="">
-                        </div>
-                        <div class="main_txt">
-                            <h2>舒適的桌遊環境</h2>
-                            <p>我們提供了舒適的環境，在這裡可以盡情地享受宜人和諧的氛圍，讓您能沉浸在好玩有趣的桌遊世界裡。</p>
-                        </div>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; margin-top: 50px;">
-                        <div class="main_txt">
-                            <h2>精緻的美味食物</h2>
-                            <p>如果在玩桌遊之餘，也能夠享受美食絕對是最舒服的事情，因此，我們提供了精緻的食物賴讓您有與眾不同的桌遊體驗。</p>
-                        </div>
-                        <div>
-                            <img src="../image/FPGoodFood.png" alt="">
-                        </div>
-                    </div>
-                    <div style="display: flex; margin-top: 50px;">
-                        <div>
-                            <img src="../image/FPteach.png" alt="">
-                        </div>
-                        <div class="main_txt">
-                            <h2>專業的人員教學</h2>
-                            <p>玩桌遊最擔心的莫過於不知道遊戲規則與玩法，但不用害怕，在我們這裡有許多專業的人員，能夠帶領您熟悉您所選擇的任何桌遊。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div>
-        <div class="hotgame" style="width: 1260px; margin: 0 auto;">
-            <div class="newstitle">
-                <h5>熱門遊戲</h5>
-                <hr>
-            </div>
-            <div style="display: flex; justify-content: space-evenly;margin: 20px;">
-                <!-- <div>
-                    <a href=""><img src="../image/arrowL.png" style="margin-top: 250%;" alt=""></a>
-                </div> -->
-
-                <div class="owl-carousel owl-theme" style="width: 900px;">
-                    <div>
-                        <div>
-                            <a href="/HTML/Alias.html"><img src="../image/Alias.png" alt="估估劃劃旅行版"></a>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center;">估估劃劃旅行版</h4>
-                        </div>
-                        <div style="display: flex;justify-content: center;margin: 10px;">
-                            <div class="GameType">派對遊戲</div>
-                            <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <a href=""><img src="../image/Telestrations.png" alt="傳情畫意"></a>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center;">傳情畫意</h4>
-                        </div>
-                        <div style="display: flex;justify-content: center;margin: 10px;">
-                            <div class="GameType">派對遊戲</div>
-                            <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <a href=""><img src="../image/TheMessage.png" alt="風聲"></a>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center;">風聲</h4>
-                        </div>
-                        <div style="display: flex;justify-content: center;margin: 10px;">
-                            <div class="GameType">輕度策略</div>
-                            <div class="GameCondition">人數 3~9人<br>適齡 10+</div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div>
-                            <a href=""><img src="../image/ThreeKingdomsKill.png" alt=""></a>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center;">三國殺</h4>
-                        </div>
-                        <div style="display: flex;justify-content: center;margin: 10px;">
-                            <div class="GameType">派對遊戲</div>
-                            <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <a href=""><img src="../image/Alias.png" alt="估估劃劃旅行版"></a>
-                        </div>
-                        <div>
-                            <h4 style="text-align: center;">估估劃劃旅行版</h4>
-                        </div>
-                        <div style="display: flex;justify-content: center;margin: 10px;">
-                            <div class="GameType">派對遊戲</div>
-                            <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <!-- <div>
-                    <a href=""><img src="../image/arrowR.png" style="margin-top: 250%;" alt=""></a>
-                </div> -->
-            </div>
-        </div>
-    </div>
+    <!-- hotgame -->
 
     <div class="footer_hr"></div>
-
-
-
 
     <footer class="site-footer">
         <div class="container">
             <div class="rowtop">
-                <div style="margin: 50px 0 0 0;width: 150px; height: 135px;">
+                <div class="footer_logo">
                     <img src="../image/LOGO.png" width="100%" alt="">
                 </div>
-                <div style="margin: 0  30px 0;">
+
+                <div class="footer_txt">
                     <div style="margin: 0 0 8px 0;">
                         <h6>關於我們</h6>
-                        <hr style="border: 1px solid #000;width: 120px;">
+                        <hr>
                     </div>
                     <ul class="footer-links">
                         <li><a href="">首頁</a></li>
@@ -296,10 +326,10 @@
                     </ul>
                 </div>
 
-                <div style="margin: 0 0 30px 0;">
+                <div class="footer_txt">
                     <div style="margin: 0 0 8px 0;">
                         <h6>商城服務</h6>
-                        <hr style="border: 1px solid #000;width: 120px;">
+                        <hr>
                     </div>
                     <ul class="footer-links">
                         <li><a href="">加入會員</a></li>
@@ -309,17 +339,18 @@
                         <li><a href="">常見問題</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <ul class="social-icons">
-                        <div class="FB aaa">
+                        <div class="FB">
                             <img src="../image/facebook_icon.png" width="100%" alt="">
                         </div>
                         <!-- Line -->
-                        <div class="Line aaa">
+                        <div class="Line">
                             <img src="../image/line_icon.png" width="100%" alt="">
                         </div>
                         <!-- IG -->
-                        <div class="IG aaa">
+                        <div class="IG">
                             <img src="../image/instagram_icon.png" width="100%" alt="">
                         </div>
                     </ul>
@@ -327,7 +358,7 @@
             </div>
         </div>
 
-        <hr style="border: 2px solid #000; width: 1260px; margin: 0 auto;">
+        <hr style="border: 2px solid #000;">
 
         <div class="container">
             <div class="rowdown">
@@ -345,16 +376,20 @@
 
     <script>
         $(".owl-carousel").owlCarousel({
-            items: 4,
             loop: true, // 循環播放
             margin: 10, // 外距 10px
             nav: true, // 顯示點點
-            dots: false,
-            // autoWidth: true,
-            autoplay: true,
-            autoPlaySpeed: 5000,
-            autoPlayTimeout: 5000,
-            autoplayHoverPause: true
+            responsive: {
+                0: {
+                    items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+                },
+                600: {
+                    items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
+                },
+                1000: {
+                    items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
+                }
+            }
         });
     </script>
 </body>

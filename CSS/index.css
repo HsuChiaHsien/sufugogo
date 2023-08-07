@@ -1,169 +1,264 @@
-        .news {
-            margin: 30px;
-        }
+a {
+    text-decoration: none;
+}
 
-        .wrap {
-            width: 1200px;
-            display: flex;
-            flex-wrap: wrap;
-            /* border: 1px solid red; */
-            justify-content: space-around;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 100px;
-        }
+body {
+    letter-spacing: 1px;
+    color: #1d1d1d;
+    font-family: Arial, STHeiti, 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
 
-        .card {
-            width: 280px;
-            margin: 30px;
-            box-shadow: 0px 0px 10px #666;
-        }
+/* news area */
+.news {
+    margin: 30px;
+}
 
-        .card img {
-            width: 100%;
-        }
+.newstitle h2 {
+    text-align: center;
+    font-size: 26px;
+}
 
-        .card .txt {
-            padding: 20px;
-        }
+.newstitle hr {
+    border: 0;
+    padding-top: 1px;
+    background: linear-gradient(to right, transparent, #bcf443, transparent);
+    margin-top: 5px;
+}
 
-        h5 {
-            font-size: 32px;
-        }
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
 
-        .newstitle {
-            text-align: center;
-        }
+.card {
+    width: 280px;
+    margin: 30px;
+    box-shadow: 0px 0px 10px #666;
+}
 
-        .newstitle hr {
-            border: 0;
-            padding-top: 1px;
-            background: linear-gradient(to right, transparent, #bcf443, transparent); 
-            margin-top: 5px;
-        }
+.card img {
+    width: 100%;
+}
 
-        .main {
-            display: flex;
-            flex-direction: column;
-            height: 1430px;
-        }
+.card .txt {
+    padding: 20px;
+}
 
-        .main_gb {
-            background-image: url(../image/dogbackground.png);
-            /* background-repeat: no-repeat; */
-            /* background-attachment: fixed; */
-            background-position: center;
-            background-size: 100% 95%;
-        }
+.card:hover {
+    transition: all 1s ease-out;
+    transform: scale(1.2, 1.2);
+}
 
-        body {
-            font-size: 15px;
-            letter-spacing: 1px;
-            color: #1d1d1d;
-            font-family: Arial, STHeiti, 'Microsoft JhengHei', '微軟正黑體', sans-serif;
-            font-weight: 400;
-            line-height: 1.5;
-            box-sizing: border-box;
-        }
+.txt p {
+    line-height: 200%;
+    font-weight: 700;
+    text-align: justify;
+    color: #222;
+}
 
-        .main_txt {
-            width: 300px;
-            text-align: justify;
-            margin: 120px 80px 80px 80px;
-            font-weight: 700;
-        }
+.txt h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #222;
+}
 
-        .main_txt p {
-            line-height: 30px;
-            margin-top: 20px;
-        }
+.news .pic img {
+    height: 200px;
+}
 
-        .GameType {
-            font-size: 10px;
-            color: #fff;
-            background-color: #000;
-            height: 25px;
-            margin: 5px;
-            width: 60px;
-            text-align: center;
-            line-height: 220%;
-            font-weight: 700;
-        }
-        
-        .GameCondition {
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
-        
-        
-        .owl-theme .item {
-            height: 10rem;
-            background: #4dc7a0;
-            padding: 1rem;
-        }
+/* news area */
 
-        .owl-carousel .item h4 {
-            color: #fff;
-            font-weight: 400;
-            font-size: 1.4375rem;
-            margin-top: 0rem;
-        }
+/* main area */
+.mainArea {
+    background-image: url(../image/dogbackground.png);
+    background-position: center;
+    background-size: 100% 95%;
+    display: flex;
+    flex-direction: column;
+    height: 1420px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
-        .owl-prev, .owl-next {
-            width: 15px;
-            height: 100px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            display: block !important;
-            border:0px solid black;
-        }
-        .owl-prev { left: -20px; }
-        .owl-next { right: -20px; }
-        .owl-prev i, .owl-next i {transform : scale(2,5); color: #ccc;}
+.mainArea img {
+    display: block;
+}
 
-        .owl-prev, .owl-next {
+.main_txt {
+    width: 300px;
+    text-align: justify;
+    margin: 120px 80px 80px 80px;
+    font-weight: 700;
+}
+
+.main_txt p {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+/* main area */
+
+/* main area max768px */
+.mainArea_wrap {
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainArea_card {
+    width: 280px;
+    margin: 30px;
+}
+
+.mainArea_card img {
+    width: 100%;
+}
+
+.mainArea_card .txt {
+    padding: 20px;
+}
+
+.mainArea_txt p {
+    line-height: 200%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.mainArea_txt h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* main area max768px */
+
+/* hot game */
+.hotgame_group {
+    padding: 50px;
+}
+
+.hotgame_group h4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hotgame img {
+    height: 200px;
+}
+
+.hotgame_txt {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.GameType {
+    font-size: 10px;
+    color: #fff;
+    background-color: #000;
+    height: 25px;
+    margin: 5px;
+    width: 60px;
+    text-align: center;
+    line-height: 220%;
+    font-weight: 700;
+}
+
+.GameCondition {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+.owl-prev,
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block !important;
+    border: 0px solid black;
+}
+
+.owl-prev {
+    left: -60px;
+}
+
+.owl-next {
+    right: -60px;
+}
+
+.owl-prev i,
+.owl-next i {
+    transform: scale(2, 5);
+    color: #ccc;
+}
+
+/* .owl-prev, .owl-next {
             display: none !important;
-          }
-          .owl-carousel:hover .owl-prev {
-            display: block !important;
-          }
-          .owl-carousel:hover .owl-next {
-            display: block !important;
-        }
+          } */
 
-        .owl-prev span, .owl-next span{
-            font-size: 50px;
-        }
+.owl-carousel:hover .owl-prev {
+    display: block !important;
+}
 
-        .owl-prev:hover{
-            background-color: transparent !important;
-            color: black !important;
-        }
-        .owl-next:hover{
-            background-color: transparent !important;
-            color: black !important;
-        }
-        
-        a {
-            text-decoration: none;
-        }
+.owl-carousel:hover .owl-next {
+    display: block !important;
+}
 
-        .card {
-            overflow: hidden;
-            transform: scale(1, 1);
-            transition: all 1s ease-out;
-        }
-        
-        .card:hover {
-            transform: scale(1.2, 1.2);
-        }
+.owl-prev span,
+.owl-next span {
+    font-size: 50px;
+}
 
-        .wrap .card .txt h3, .wrap .card .txt p {
-            color: #000;
-            font-size: 10px; 
-            margin-bottom: 10px; 
-        }
+.owl-prev:hover {
+    background-color: transparent !important;
+    color: black !important;
+}
 
-       
+.owl-next:hover {
+    background-color: transparent !important;
+    color: black !important;
+}
+
+/* hot game */
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    .news {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .hotgame {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mainArea {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mainArea_wrap {
+        display: none;
+    }
+}
