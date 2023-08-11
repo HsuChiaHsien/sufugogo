@@ -202,3 +202,80 @@ h1 {
     margin: 0 5px;
     color: #ccc;
 }
+
+h5 {
+    text-decoration: none;
+    line-height: 30px;
+    background: #fffae7;
+    padding: 5px 5px 5px 15px;
+    margin: 20px 0 15px 0;
+    border-bottom: 1px #bcf443 solid;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+
+.GameCardGroup {
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    text-align: center;
+}
+
+.more {
+    background-color: #fffae7;
+    border: none;
+    padding: 5px;
+    margin-left: 75%;
+}
+
+.gamecard {
+    padding: 5px;
+}
+
+@media screen and (min-width:1200px) {
+    .GameCardGroup_M {
+        display: none;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .main {
+        display: none;
+    }
+
+    .nav_box_left {
+        width: 414px;
+        display: initial;
+    }
+
+    .subMenu {
+        width: 400px;
+        height: 220px;
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    .subMenu p {
+        display: inline-block;
+    }
+
+    .img_btn {
+        display: block;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .select {
+        width: 100px;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+}

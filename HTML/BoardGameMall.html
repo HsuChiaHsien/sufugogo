@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/BoardGameMall.css">
     <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -26,7 +32,7 @@
                 <img src="../image/LOGO.png">
             </a>
         </div>
-    
+
         <div class="hb">
             <label for="menu-switch">
                 <span></span>
@@ -34,14 +40,14 @@
                 <span></span>
             </label>
         </div>
-    
+
         <nav class="main-nav">
-            <a href="#">關於我們</a>
-            <a href="#">趣味桌遊</a>
-            <a href="#">精緻餐點</a>
-            <a href="#">桌遊商城</a>
+            <a href="../HTML/AboutUs.html">關於我們</a>
+            <a href="../HTML/BoardGame.html">趣味桌遊</a>
+            <a href="../HTML/FineDining.html">精緻餐點</a>
+            <a href="../HTML/BoardGameMall.html">桌遊商城</a>
         </nav>
-    
+
         <div class="search">
             <img src="../image/search_icon.png" alt="search_icon">
             <form action="">
@@ -50,7 +56,7 @@
         </div>
     </header>
     <!-- header navbar -->
-    
+
     <!-- big image area -->
     <div class="bigimageArea" style="background-image: url(../image/BoardGameMall_big.jpg);">
         <div class="bigimageArea_txt">
@@ -60,7 +66,7 @@
         </div>
     </div>
     <!-- big image area -->
-    
+
     <div class="header_hr"></div>
 
     <div class="menu_list_left">
@@ -114,88 +120,43 @@
                 </h3>
             </a>
         </div>
-        <div class="main">
-            <div class="banner">
-                <a id="banner_herf" target="_news" href="">
-                    <img id="main_banner" class="main_banner_main" src="../image/LimitedTimeGift.jpg" alt="限時大禮包">
-                </a>
-                <div class="circle_group">
-                    <a href="">
-                        <div id="circle_1" class="circle" style="background-color: #888"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_2" class="circle"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_3" class="circle"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_4" class="circle"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_5" class="circle"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_6" class="circle"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_7" class="circle"></div>
-                    </a>
-                    <a href="">
-                        <div id="circle_8" class="circle"></div>
-                    </a>
-                    <input id="iValue" value="1" style="display: none; border: solid;">
-                </div>
-                <div style="clear: both;"></div>
-            </div>
+
+        <div id="sliderBoard">
+            <ul id="content">
+                <li><img src="../image/LimitedTimeGift.jpg"></li>
+                <li><img src="../image/Mallbanner.jpg"></li>
+                <li><img src="../image/Mallbanner2.jpg"></li>
+                <li><img src="../image/LimitedTimeGift.jpg"></li>
+                <li><img src="../image/Mallbanner.jpg"></li>
+                <li><img src="../image/Mallbanner2.jpg"></li>
+                <li><img src="../image/LimitedTimeGift.jpg"></li>
+                <li><img src="../image/Mallbanner.jpg"></li>
+            </ul>
+            <ul id="contentButton"></ul>
         </div>
     </div>
 
-    <div>
-        <ul style="display: flex; justify-content: center; margin-top: 50px;">
-            <a href="">
-                <li>
-                    <div class="typeName_1" style="border-top-color: rgb(190, 30 ,45);">
-                        新品推薦
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <div class="typeName_1" style="border-top-color: rgb(191, 191 ,191);">
-                        每周推薦
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <div class="typeName_1" style="border-top-color: rgb(191, 191 ,191);">
-                        暢銷排行榜
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <div class="typeName_1" style="border-top-color: rgb(191, 191 ,191);">
-                        人氣排行榜
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <div class="typeName_1" style="border-top-color: rgb(191, 191 ,191);">
-                        瀏覽排行榜
-                        <input type="hidden" id="mid_1_5" value="">
-                    </div>
-                </li>
-            </a>
+    <div id="tab-demo">
+        <ul class="tab-title">
+            <li>
+                <a class="typeName" href="#tab01">新品推薦</a>
+            </li>
+            <li>
+                <a class="typeName" href="#tab02">每週推薦</a>
+            </li>
+            <li>
+                <a class="typeName" href="#tab03">暢銷排行榜</a>
+            </li>
+            <li>
+                <a class="typeName" href="#tab04">人氣排行榜</a>
+            </li>
+            <li>
+                <a class="typeName" href="#tab05">瀏覽排行榜</a>
+            </li>
         </ul>
     </div>
-    <div class="typeList_1">
+
+    <div id="tab01" class="typeList_1">
         <div class="type_a">
             <a href="../HTML/Alias.html">
                 <img src="../image/Alias.png" title="估估劃劃旅行版" alt="估估劃劃旅行版">
@@ -238,35 +199,7 @@
         </div>
     </div>
 
-    <div>
-        <ul style="display: flex; justify-content: center; margin-top: 50px;">
-            <a href="">
-                <li>
-                    <div class="typeName_2" style="border-top-color: rgb(190, 30 ,45);">
-                        門市暢銷
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <div class="typeName_2" style="border-top-color: rgb(191, 191 ,191);">
-                        經典收藏
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <div class="typeName_2" style="border-top-color: rgb(191, 191 ,191);">
-                        教育概念
-                        <input type="hidden" value="">
-                    </div>
-                </li>
-            </a>
-        </ul>
-    </div>
-    <div class="typeList_1">
+    <div id="tab02" class="typeList_1">
         <div class="type_a">
             <a href="">
                 <img src="../image/ChaDango.png" title="茶丸子" alt="茶丸子">
@@ -306,6 +239,427 @@
                     <div class="GameCondition">人數 3~5人<br>適齡 10+</div>
                 </div>
             </a>
+        </div>
+    </div>
+
+    <div id="tab03" class="typeList_1">
+        <div class="type_a">
+            <a href="../HTML/Alias.html">
+                <img src="../image/Alias.png" title="估估劃劃旅行版" alt="估估劃劃旅行版">
+                <h4>估估劃劃旅行版</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/TheMessage.png" title="風聲" alt="風聲">
+                <h4>風聲</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">輕度策略</div>
+                    <div class="GameCondition">人數 3~9人<br>適齡 10+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/Telestrations.png" title="傳情畫意" alt="傳情畫意">
+                <h4>傳情畫意</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/ThreeKingdomsKill.png" title="三國殺" alt="三國殺">
+                <h4>三國殺</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="tab04" class="typeList_1">
+        <div class="type_a">
+            <a href="">
+                <img src="../image/ChaDango.png" title="茶丸子" alt="茶丸子">
+                <h4>茶丸子</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 2~8人<br>適齡 5+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/WitchHunter.png" title="女巫獵人" alt="女巫獵人">
+                <h4>女巫獵人</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 2~6人<br>適齡 5+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/Salem1692.png" title="獵巫鎮" alt="獵巫鎮">
+                <h4>獵巫鎮</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 4~5人<br>適齡 12+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/SnowTime.png" title="雪之時" alt="雪之時">
+                <h4>雪之時</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">輕度策略</div>
+                    <div class="GameCondition">人數 3~5人<br>適齡 10+</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div id="tab05" class="typeList_1">
+        <div class="type_a">
+            <a href="../HTML/Alias.html">
+                <img src="../image/Alias.png" title="估估劃劃旅行版" alt="估估劃劃旅行版">
+                <h4>估估劃劃旅行版</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/TheMessage.png" title="風聲" alt="風聲">
+                <h4>風聲</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">輕度策略</div>
+                    <div class="GameCondition">人數 3~9人<br>適齡 10+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/Telestrations.png" title="傳情畫意" alt="傳情畫意">
+                <h4>傳情畫意</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+                </div>
+            </a>
+        </div>
+        <div class="type_a">
+            <a href="">
+                <img src="../image/ThreeKingdomsKill.png" title="三國殺" alt="三國殺">
+                <h4>三國殺</h4>
+                <div style="display: flex;justify-content: center;margin: 10px;">
+                    <div class="GameType">派對遊戲</div>
+                    <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- 手機版 -->
+    <div class="title_group">
+        <h5>新品推薦</h5>
+        <hr>
+    </div>
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href="../HTML/Alias.html"><img src="../image/Alias.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">估估劃劃旅行版</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Telestrations.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">傳情畫意</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/TheMessage.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">風聲</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 3~9人<br>適齡 10+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/ThreeKingdomsKill.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">三國殺</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title_group">
+        <h5>每週推薦</h5>
+        <hr>
+    </div>
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href=""><img src="../image/ChaDango.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">茶丸子</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~8人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Chromino.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center; ">卡米諾</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">家庭遊戲</div>
+                <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/WitchHunter.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">女巫獵人</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~6人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Salem1692.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">獵巫鎮</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~5人<br>適齡 12+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title_group">
+        <h5>暢銷排行榜</h5>
+        <hr>
+    </div>
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href=""><img src="../image/SnowTime.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">雪之時</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 3~5人<br>適齡 10+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/BombArena2.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">炸彈競技場2</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~9人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/ThreeKingdomsKillMyth.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">三國殺 : 神話</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 2~10人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/CatLady.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">萌貓淑女</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~4人<br>適齡 8+</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title_group">
+        <h5>人氣排行榜</h5>
+        <hr>
+    </div>
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href="../HTML/Alias.html"><img src="../image/Alias.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">估估劃劃旅行版</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~12人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Telestrations.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">傳情畫意</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/TheMessage.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">風聲</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">輕度策略</div>
+                <div class="GameCondition">人數 3~9人<br>適齡 10+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/ThreeKingdomsKill.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">三國殺</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~10人<br>適齡 10+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title_group">
+        <h5>瀏覽排行榜</h5>
+        <hr>
+    </div>
+    <div class="GameCardGroup">
+        <div>
+            <div>
+                <a href=""><img src="../image/ChaDango.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">茶丸子</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~8人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Chromino.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center; ">卡米諾</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">家庭遊戲</div>
+                <div class="GameCondition">人數 4~8人<br>適齡 8+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/WitchHunter.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">女巫獵人</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 2~6人<br>適齡 5+</div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <a href=""><img src="../image/Salem1692.png" alt=""></a>
+            </div>
+            <div>
+                <h4 style="text-align: center;">獵巫鎮</h4>
+            </div>
+            <div style="display: flex;justify-content: center;margin: 10px;">
+                <div class="GameType">派對遊戲</div>
+                <div class="GameCondition">人數 4~5人<br>適齡 12+</div>
+            </div>
         </div>
     </div>
 
@@ -361,7 +715,7 @@
                         </div>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
 
@@ -381,8 +735,64 @@
         </div>
     </footer>
 
+    <script>
+        $(document).ready(function () {
+            let divWidth = $('#sliderBoard').width()
+            let imgCount = $('#content li').length
 
+            for (let i = 0; i < imgCount; i++) {
+                $('#contentButton').append(`<li></li>`)
+            }
+            $('#contentButton li:first').addClass('clicked')
 
+            $('#content li').width(divWidth)   // li 的寬度
+            $('#content').width(divWidth * imgCount)   // ul 的寬度
+
+            let index = 0
+            let timer = setInterval(moveToNext, 5000)
+
+            $(`#contentButton li`).click(function () {
+                clearInterval(timer)
+                index = $(this).index()
+
+                $('#content').animate({
+                    left: index * divWidth * -1
+                })
+
+                $(this).addClass('clicked')
+                $(`#contentButton li`).not(this).removeClass('clicked')
+
+                timer = setInterval(moveToNext, 5000)
+            })
+
+            function moveToNext() {
+                if (index < imgCount - 1) {
+                    index++
+                } else {
+                    index = 0
+                }
+
+                $('#content').animate({
+                    left: index * divWidth * -1
+                })
+
+                $(`#contentButton li:eq(${index})`).addClass('clicked')
+                $(`#contentButton li`).not(`:eq(${index})`).removeClass('clicked')
+            }
+        });
+    </script>
+
+    <script>
+        $(function () {
+            var $li = $('ul.tab-title li');
+            $($li.eq(0).addClass('active').find('a').attr('href')).siblings('.typeList_1').hide();
+
+            $li.mousemove(function () {
+                $($(this).find('a').attr('href')).show().siblings('.typeList_1').hide();
+                $(this).addClass('active').siblings('.active').removeClass('active');
+            });
+        });
+    </script>
 
 
 

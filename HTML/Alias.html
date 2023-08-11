@@ -36,10 +36,10 @@
         </div>
 
         <nav class="main-nav">
-            <a href="#">關於我們</a>
-            <a href="#">趣味桌遊</a>
-            <a href="#">精緻餐點</a>
-            <a href="#">桌遊商城</a>
+            <a href="../HTML/AboutUs.html">關於我們</a>
+            <a href="../HTML/BoardGame.html">趣味桌遊</a>
+            <a href="../HTML/FineDining.html">精緻餐點</a>
+            <a href="../HTML/BoardGameMall.html">桌遊商城</a>
         </nav>
 
         <div class="search">
@@ -60,7 +60,7 @@
     </div>
 
     <div class="p_view">
-        <div style="display: flex; justify-content: space-evenly;">
+        <div class="cardGroup">
             <div class="pImgBlock">
                 <div class="product_img_group">
                     <img id="product_img_big" src="../image/Alias_big.png">
@@ -86,13 +86,9 @@
                 <div class="list_text">
                     <div id="count_place">
                         <span id="buy_count" class="fare" style="margin-left: 60px;">數量 : </span>
-                        <input type="button" value="-" class="qtyminus" field="quantity" style="margin-left: 14px;"
-                            disabled>
-                        <input type="text" value="0" name="quantity" class="qty" id="buy_num" disabled>
-                        <input type="button" value="+" class="qtyplus" field="quantity" style="margin-right: 14px;"
-                            disabled>
-                        <span>無庫存</span>
-                        <span id="inventoryBust"></span>
+                        <input type="button" value="-" class="qtyminus" style="margin-left: 14px;">
+                        <input type="text" value="0" name="quantity" class="qty" id="buy_num">
+                        <input type="button" value="+" class="qtyplus" style="margin-right: 14px;">
                     </div>
                 </div>
                 <div class="buyArea">
@@ -113,7 +109,7 @@
 
                 <div class="list_text">
                     <div class=" title_box">遊戲特色 :
-                        <p style="margin-left: 35px;">
+                        <p>
                             分隊猜題競賽，玩家在各自隊伍輪流擔任出題者，在有限的時間內盡可能讓隊友猜到謎底，答對越多張可以前進劃掉越多，最先抵達終點的隊伍獲得勝利！
                         </p>
                     </div>
@@ -174,8 +170,8 @@
                     </ol>
                 </div>
 
-                <a href="#topnav"><input style="width:20%; margin:10px 35%; text-align:center;" type="text"
-                        value="回到頁面上方 ↑" class="btn"></a>
+                <a href="#"><input style="width:20%; margin:10px 35%; text-align:center;" type="text" value="回到頁面上方 ↑"
+                        class="btn"></a>
             </div>
         </div>
     </div>
@@ -253,12 +249,8 @@
     </footer>
 
     <script>
-        function showLarge(e) { //e是事件物件
-            //e.target:指點按在哪一個物件
+        function showLarge(e) {
             document.getElementById("product_img_big").src = e.target.src;
-
-
-
         }
 
         function init() {
@@ -266,11 +258,34 @@
             for (let i = 0; i < smalls.length; i++) {
                 smalls[i].onclick = showLarge;
             }
-
         }
 
         window.addEventListener("load", init, false);
     </script>
+
+    <script>
+        function init() {
+            let btnMinus = document.getElementsByClassName("qtyminus");
+            let btnPlus = document.getElementsByClassName("qtyplus");
+            let qty = document.getElementsByClassName("qty");
+            for (let i = 0; i < btnMinus.length; i++) {
+                btnMinus[i].onclick = function (e) {
+                    if (qty[i].value == 0) { //數量為0時,不給減
+                        return;
+                    }
+                    qty[i].value = qty[i].value - 1;
+                }
+                btnPlus[i].onclick = function (e) {
+                    let qtyObject = e.target.previousElementSibling;
+                    console.log(qtyObject);
+                    qty[i].value = parseInt(qty[i].value) + 1;
+                    console.log(qty);
+                }
+            }
+        }
+        window.addEventListener("load", init, false);		
+    </script>
+
 
 </body>
 

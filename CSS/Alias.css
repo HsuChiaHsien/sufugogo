@@ -36,11 +36,6 @@ select {
     color: #000;
 }
 
-.p_view {
-    width: 1260px;
-    margin: 10px auto 10px auto;
-}
-
 .p_view .pImgBlock {
     width: 40%;
     border: none;
@@ -141,7 +136,7 @@ select {
     white-space: nowrap;
 }
 
-input.qtyminus {
+.qtyminus {
     width: 25px;
     height: 35px;
     border: 1px solid #bcf443;
@@ -158,7 +153,7 @@ input.qtyminus {
     background: #fffae3;
 }
 
-input.qtyplus {
+.qtyplus {
     width: 25px;
     height: 35px;
     border: 1px solid #bcf443;
@@ -166,7 +161,7 @@ input.qtyplus {
 }
 
 .buyArea {
-    margin-left: 40px;
+    margin-left: 25px;
 }
 
 .carButton {
@@ -212,7 +207,6 @@ input.qtyplus {
     padding: 0.2em 0.6em;
     border: 0;
     border-radius: 0.1em;
-    box-shadow: 0 0.2em 0.5em #a7a4a4;
     font-size: 1.25rem;
     line-height: 1.5;
     background-color: #fffae7;
@@ -258,6 +252,11 @@ input.qtyplus {
     border-bottom-color: #a7a2a2;
 }
 
+.cardGroup {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .carButton {
     background-color: #fffae7;
     color: black;
@@ -280,4 +279,77 @@ input.qtyplus {
     display: block;
     margin-top: 20px;
     line-height: 200%;
+}
+
+@media screen and (min-width:1200px) {
+    .p_view {
+        width: 1260px;
+        margin: 10px auto 10px auto;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .p_view {
+        width: 414px;
+        margin: 0;
+    }
+
+    .cardGroup {
+        flex-direction: column;
+    }
+
+    .p_view .pImgBlock {
+        width: 414px;
+        text-align: center;
+    }
+
+    .product_img_group {
+        width: 400px;
+        height: 0;
+        min-height: 420px;
+    }
+
+    .product_img {
+        width: 414px;
+    }
+
+    .product_main {
+        text-align: center;
+    }
+
+    #priceArea {
+        margin-left: 0;
+        padding: 26px;
+        height: auto;
+    }
+
+    .p_view .mini_text {
+        padding-left: 0;
+    }
+
+    #count_place {
+        margin-left: 0;
+    }
+
+    .buyArea {
+        margin-left: 0;
+    }
+
+    .attributeArea {
+        width: 414px;
+        margin: 0;
+    }
+
+    .list_text_group {
+        width: 414px;
+    }
+
+    .btn_list_tab li {
+        width: 414px;
+    }
+
+    .title_box {
+        margin-left: 0;
+        width: 400px;
+    }
 }
