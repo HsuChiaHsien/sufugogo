@@ -110,6 +110,10 @@ h5 {
     letter-spacing: 3px;
 }
 
+.StoreInformation_txt {
+    margin: 60px;
+}
+
 @media screen and (min-width: 1200px) {
     .idea {
         width: 1200px;
@@ -159,13 +163,13 @@ h5 {
     }
 
     .map {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 0;
     }
 
     .StoreInformation iframe {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     .StoreInformation p {
@@ -174,6 +178,10 @@ h5 {
 
     .StoreInformation input {
         margin-left: 95px;
+    }
+
+    .StoreInformation_txt {
+        margin: 20px;
     }
 
 }

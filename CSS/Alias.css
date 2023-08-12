@@ -288,7 +288,7 @@ select {
     }
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:768px) {
     .p_view {
         width: 414px;
         margin: 0;

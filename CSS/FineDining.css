@@ -65,7 +65,7 @@ body {
     position: absolute;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:768px) {
     .Food {
         width: 414px;
         margin: 0 auto;

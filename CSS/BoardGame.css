@@ -107,17 +107,12 @@ option {
     padding: 0px 2px 1px;
 }
 
-.row {
-    width: 1260px;
-    margin: 0 auto;
-}
-
 .row img {
     width: 35px;
     height: 35px;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:768px) {
     #searchform {
         width: 414px;
         display: flex;
@@ -141,4 +136,8 @@ option {
         margin-top: 30px;
     }
 
+    .row {
+        width: 414px;
+        margin: 0 auto;
+    }
 }
