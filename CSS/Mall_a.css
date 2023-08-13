@@ -220,7 +220,7 @@ h5 {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .product {
@@ -250,7 +250,7 @@ h5 {
     }
 
     .nav_box_left {
-        width: 414px;
+        width: 380px;
     }
 
     .subMenu {
