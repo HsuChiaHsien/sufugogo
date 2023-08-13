@@ -265,6 +265,10 @@ h5 {
         margin: 0 auto;
         text-align: justify;
     }
+    .subMenu form {
+        width: 360px;
+        margin: 0 auto;
+    }
 
     .subMenu p {
         display: inline-block;
