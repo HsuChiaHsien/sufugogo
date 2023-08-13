@@ -240,6 +240,11 @@ a {
     .typeList_1 {
         display: none;
     }
+
+    .menu_list_left {
+        width: 360px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width:768px) {
