@@ -85,10 +85,6 @@
 
 
  @media screen and (max-width: 767px) {
-     .hb {
-         margin-top: 10px;
-     }
-
      .hb label {
          width: 40px;
          height: 40px;
