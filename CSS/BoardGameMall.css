@@ -149,6 +149,8 @@ a {
 }
 
 .title_group h5 {
+    width: 360px;
+    margin: 0 auto;
     letter-spacing: 20px;
     text-align: center;
     font-size: 32px;
