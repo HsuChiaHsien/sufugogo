@@ -162,13 +162,18 @@ a {
 }
 
 .GameCardGroup {
-    width: 414px;
+    width: 360px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 30px;
     margin-top: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.gamecard {
+    padding: 5px;
+    width: 160px;
 }
 
 .GameType {
@@ -208,7 +213,7 @@ a {
     color: #333;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .mallnav_box {
         display: none;
     }
@@ -232,7 +237,7 @@ a {
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:768px) {
     .menu_list_left {
         width: 1200px;
         margin: 0 auto;
