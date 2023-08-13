@@ -172,6 +172,11 @@ h1 {
     display: inline;
 }
 
+.GameCardGroup_M {
+    width: 360px;
+    margin: 0 auto;
+}
+
 /* 麵包屑的容器 */
 .breadcrumb {
     font-size: 14px;
@@ -204,7 +209,6 @@ h1 {
 }
 
 h5 {
-    width: 360px;
     text-decoration: none;
     line-height: 30px;
     background: #fffae7;

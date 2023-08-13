@@ -148,9 +148,12 @@ a {
     background-color: #666;
 }
 
-.title_group h5 {
+.title_group {
     width: 360px;
     margin: 0 auto;
+}
+
+.title_group h5 {
     letter-spacing: 20px;
     text-align: center;
     font-size: 32px;
